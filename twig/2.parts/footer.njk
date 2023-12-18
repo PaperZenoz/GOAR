@@ -1,0 +1,59 @@
+{% set  _ = 'footer' %}
+<div class="{{ _ }}">
+    <div class="container">
+        <div class="{{ _ }}__wrap">
+            <div class="{{ _ }}__column">
+                <h3 class="h3">Продукция</h3>
+                {% set  list = [
+                    'Консилер',
+                    'Тон',
+                    'Карандаши',
+                    'Спонжи'] %}
+
+                {% for item in list %}
+                    <a href="#">{{ item }}</a>
+                {% endfor %}
+
+            </div>
+            <div class="{{ _ }}__column">
+                <h3 class="h3">Компания</h3>
+                {% set  list = [
+                    'Оплата и доставка',
+                    'Советы от Goar',
+                    'О бренде',
+                    'Контакты',
+                    'Политика конфиденциальности'
+
+                ] %}
+
+                {% for item in list %}
+                    <a href="#">{{ item }}</a>
+                {% endfor %}
+            </div>
+            <div class="{{ _ }}__column">
+                <h3 class="h3">Контакты</h3>
+
+                {% set  list = [
+                    '8(800)555-35-35',
+                    'info@goar.ru',
+                    'Время работы: пн-пт с 10 до 19',
+                    '109012, г. Москва, ул. Никольская д.10'
+
+                ] %}
+
+                {% for item in list %}
+                    <a href="#">{{ item }}</a>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div id="preloader">
+    <div class="preloader"></div>
+</div>
+
+</body>

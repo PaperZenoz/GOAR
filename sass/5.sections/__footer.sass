@@ -1,0 +1,12 @@
+.footer
+  @include py(130px, 100px, 80px, 60px, 30px) 
+  &__wrap
+    display: grid
+    @include g(3, 3, 2, 2, 1)
+    gap: 30px
+
+  &__column
+    a
+      display: block
+      margin-bottom: 10px
+      @extend %lc
