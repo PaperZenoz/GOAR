@@ -5,10 +5,12 @@ $(window).on("load", function () {
 });
 
 
-
-$(document).ready(function() {
-$('.product-view__slider-core').slick()
+$(document).ready(function () {
+    $('.product-view__slider-core').slick({
+        arrows: false
+    })
     $('.product-view__slider-pagination').slick({
-        slidesToShow: 3
+        slidesToShow: 3,
+        arrows: false
     })
 })

@@ -1,0 +1,119 @@
+.gap
+  margin-bottom: 20px
+  @media screen and (max-width: 1023px)
+    margin-bottom: 10px
+
+
+.advices
+  &__back
+    margin-top: 50px
+    margin-bottom: 50px
+    @extend %fy
+    gap: 10px
+
+    svg
+      transform: scale(0.7)
+
+  &__wrap
+    display: grid
+    grid-template-columns: auto 400px
+    grid-gap: 30px
+    @media screen and (max-width: 1366px)
+      grid-template-columns: 1fr
+
+
+  &__img
+    width: 340px
+    height: 340px
+    flex-shrink: 0
+
+
+  &__article
+    display: flex
+    gap: 30px
+    margin-bottom: 50px
+    @media screen and (max-width: 1023px)
+    	flex-direction: column
+    
+    	
+    
+
+
+  &__tags
+    @extend %fy
+    gap: 15px
+
+  &__tag
+    padding: 5px 15px
+    @extend %700
+    border: 3px solid $main-color
+    @include r(24px)
+
+  &__list
+    display: flex
+    margin-bottom: 50px
+    @media screen and (max-width: 1023px)
+      flex-direction: column
+
+
+
+
+
+  &__num
+    font-size: 60px
+    @extend %700
+    color: $main-color
+
+  &__item
+    width: 100%
+    padding: 30px
+    text-align: center
+
+    &:nth-child(1)
+      background-color: #fafafa
+
+    &:nth-child(2)
+      background-color: $main-color
+
+      .advices__num
+        color: $white
+
+    &:nth-child(3)
+      background-color: #422164
+      color: $white
+
+  &__video
+    height: 500px
+    display: block
+    @media screen and (max-width: 1366px)
+    	height: 300px
+    
+    @media screen and (max-width: 639px)
+      height: 200px
+
+
+
+
+
+
+  &__sidebar
+    position: sticky
+    top: 0
+    height: max-content 
+
+
+  &__sidebar-item
+    display: flex
+    gap: 15px
+    margin-bottom: 30px
+    @extend %lc
+
+  &__sidebar-img
+    width: 150px
+    height: 150px
+
+  &__sidebar-text
+
+
+
+
