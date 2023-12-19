@@ -1,0 +1,55 @@
+{% set page = { title: 'Карточка товара' } %}
+{% extends "./2.parts/main.njk" %}
+{% block content %}
+
+    {% set  bread = [
+        'Продукты',
+        'PINK BLUSH'] %}
+
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb__wrap">
+                {% for item in bread %}
+                    <a href="#" class="breadcrumb__link">{{ item }}</a>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+    
+    
+    {% set  _ = 'product-view' %}
+    <div class="{{_}}">
+        <div class="container">
+            <div class="{{_}}__wrap">
+                <div class="{{_}}__slider">
+                    <div class="{{_}}__slider-pagination">
+                        {% for i in range(1, 6) %}
+                            <a href="#" class="{{_}}__slider-pagination-item img">
+                                <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+                            </a>
+                        {% endfor %}
+
+                    </div>
+                    <div class="{{_}}__slider-core">
+                        {% for i in range(1, 6) %}
+
+                        <a href="#" class="{{_}}__slider-core-item img">
+                            <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+{% endblock content %}

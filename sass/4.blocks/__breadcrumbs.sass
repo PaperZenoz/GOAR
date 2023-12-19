@@ -1,5 +1,6 @@
-.breadcrumbs
+.breadcrumb
   line-height: 1.4
+  font-family: 'Roboto', sans-serif
 
 
   &__wrap
@@ -10,24 +11,21 @@
 
   &__link
     padding-right: 15px
-    margin-right: 15px
+    margin-right: 10px
     position: relative
-    color: $gray-8e
 
     &:before
-      content: ''
-      width: 4px
-      height: 4px
-      @include r(50%)
-      background-color: $red
+      content: '/'
       display: block
       position: absolute
       right: 0
       top: 50%
       transform: translateY(-50%)
+      @extend %700
 
     &:last-child
       color: $black
       pointer-events: none
+      @extend %700
       &:before
         display: none
