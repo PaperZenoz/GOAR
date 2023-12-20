@@ -1,10 +1,9 @@
 .btn
-  height: 30px
+  height: 48px
   min-width: 140px
   width: max-content
   border: 1px solid $main-color
-  line-height: 50px
-  display: inline-flex
+  display: inline-flex 
   align-items: center
   justify-content: center
   transition: all ease .3s
@@ -13,6 +12,7 @@
   cursor: pointer
   padding: 0 15px
   background-color: $main-color
+  @extend %700
 
   &--white
     border: 3px solid $main-color

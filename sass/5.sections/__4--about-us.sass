@@ -16,15 +16,17 @@
       @extend %700
 
 .about-us-core
+  
   &__block
     @include py(130px, 100px, 80px, 60px, 30px)
     @include px(30px, 30px, 20px, 20px, 10px)
+
 
     position: relative
     @media screen and (max-width: 1919px)
       display: flex
       gap: 30px
-    @media screen and (max-width: 1366px)
+    @media screen and (max-width: 1023px)
       display: block
 
 
@@ -85,6 +87,7 @@
         margin-bottom: -0px
 
 .about-us-footer
+
   @include py(130px, 100px, 80px, 60px, 30px)
   background-image: url("../../images/about-us-footer/1.jpg")
   background-size: cover
@@ -95,6 +98,16 @@
     max-width: 580px
     @media screen and (max-width: 1919px)
       max-width: 100%
+  &__wrap
+    @include h(300px, 300px, 250px, auto, auto)
+    @extend %fy
+    width: 50%
+    @media screen and (max-width: 1023px)
+      width: 100%
+    
+    	
+    
+
 
 
 
