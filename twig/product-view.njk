@@ -34,10 +34,8 @@
                     </div>
                     <div class="{{_}}__slider-core">
                         {% for i in range(1, 6) %}
-
-                        <a href="#" class="{{_}}__slider-core-item img">
+                        <a href="images/{{ _ }}/{{ loop.index }}.jpg" data-fancybox="" class="{{_}}__slider-core-item img">
                             <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
-
                         </a>
                         {% endfor %}
                     </div>

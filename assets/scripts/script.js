@@ -6,11 +6,32 @@ $(window).on("load", function () {
 
 
 $(document).ready(function () {
-    $('.product-view__slider-core').slick({
-        arrows: false
-    })
+
     $('.product-view__slider-pagination').slick({
         slidesToShow: 3,
-        arrows: false
+        infinite: true,
+        arrows: false,
+        vertical: true,
+        asNavFor: '.product-view__slider-core',
+        focusOnSelect: true
     })
+    $('.product-view__slider-core').slick({
+        arrows: false,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        lazyLoad: 'ondemand',
+        cssEase: 'linear',
+        asNavFor: '.product-view__slider-pagination',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: true,
+                }
+            }
+        ]
+    })
+
+
 })
