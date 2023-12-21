@@ -4,19 +4,32 @@
   background-position: center
   background-repeat: no-repeat
   background-size: cover
+  @media screen and (max-width: 639px)
+    background-image: url("../../images/about-us-banner/2.jpg")
+    background-position: bottom
+
 
   &__wrap
     text-align: center
     max-width: 650px
     margin: 0 auto
+    @media screen and (max-width: 639px)
+      height: 470px
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: center
 
     .h1
       @extend %up
-      @include f(60px, 50px, 40px, 30px, 20px)
+      @include f(60px, 50px, 40px, 40px, 40px)
       @extend %700
+      @media screen and (max-width: 639px)
+        margin-bottom: 20px
+
 
 .about-us-core
-  
+
   &__block
     @include py(130px, 100px, 80px, 60px, 30px)
     @include px(30px, 30px, 20px, 20px, 10px)
@@ -30,15 +43,23 @@
       display: block
 
 
-
-
-
-
-
-
-
     &:nth-child(3) .about-us-core__content
       margin-left: auto
+      &:before
+        content: ''
+        height: 250px
+        position: absolute
+        display: block
+        width: 100vw
+        background-color: $main-color
+        right: 0
+        transform: translate(100%, -50%)
+        top: 50%
+        @media screen and (max-width: 1023px)
+        	display: none
+
+
+
 
 
     &:nth-child(2)
@@ -46,15 +67,41 @@
       background-color: $main-color
       width: 85%
       @media screen and (max-width: 1023px)
-      	width: 100%
-      
-      	
-      
+        width: 100%
+      &:before
+        content: ''
+        height: 100%
+        position: absolute
+        display: block
+        width: 100vw
+        background-color: $main-color
+        left: 0
+        top: 0
+        transform: translateX(-100%)
+      &:after
+        content: ''
+        height: 100%
+        position: absolute
+        width: 100vw
+        background-color: $main-color
+        right: 0
+        top: 0
+        transform: translateX(100%)
+        display: none
+        @media screen and (max-width: 1023px)
+        	display: block
+
+
+
+
 
   &__content
-    max-width: 580px
+    max-width: 600px
     @media screen and (max-width: 1919px)
       max-width: 100%
+
+  &__mobile-right
+      text-align: right
 
 
   &__img
@@ -73,6 +120,10 @@
       margin-bottom: -75px
       width: 75%
       position: relative
+    @media screen and (max-width: 639px)
+      width: 100%
+      margin-left: auto
+
 
   &__block:nth-child(3)
     .about-us-core__img
@@ -93,17 +144,27 @@
   background-size: cover
   background-repeat: no-repeat
   background-position: center
+  @media screen and (max-width: 639px)
+    background-image: url("../../images/about-us-footer/2.jpg")
+    height: 490px
+    text-align: center
+    background-position: bottom
+
+
+
 
   &__content
     max-width: 580px
     @media screen and (max-width: 1919px)
       max-width: 100%
+
   &__wrap
     @include h(300px, 300px, 250px, auto, auto)
     @extend %fy
     width: 50%
-    @media screen and (max-width: 1023px)
-      width: 100%
+    @media screen and (max-width: 639px)
+      width: 85%
+      margin: 50px auto 0
     
     	
     

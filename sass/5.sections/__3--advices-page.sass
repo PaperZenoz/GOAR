@@ -26,6 +26,9 @@
     width: 340px
     height: 340px
     flex-shrink: 0
+    @media screen and (max-width: 1023px)
+      width: 290px
+      height: 290px
 
 
   &__article
@@ -33,21 +36,23 @@
     gap: 30px
     margin-bottom: 50px
     @media screen and (max-width: 1023px)
-    	flex-direction: column
-    
-    	
-    
+      flex-direction: column
 
 
   &__tags
     @extend %fy
     gap: 15px
+    @media screen and (max-width: 639px)
+      gap: 5px
 
   &__tag
     padding: 5px 15px
     @extend %700
     border: 3px solid $main-color
     @include r(24px)
+    @media screen and (max-width: 639px)
+      font-size: 13px
+
 
   &__list
     display: flex
@@ -56,13 +61,21 @@
       flex-direction: column
 
 
-
-
-
   &__num
-    font-size: 60px
+    font-size: 130px
     @extend %700
     color: $main-color
+    position: relative
+    text-align: center
+
+    span
+      color: $black
+      position: absolute
+      transform: translateY(10px)
+
+    strong
+      z-index: 2
+      position: relative
 
   &__item
     width: 100%
@@ -86,20 +99,16 @@
     height: 500px
     display: block
     @media screen and (max-width: 1366px)
-    	height: 300px
-    
+      height: 300px
+
     @media screen and (max-width: 639px)
-      height: 200px
-
-
-
-
+      height: 170px
 
 
   &__sidebar
     position: sticky
     top: 0
-    height: max-content 
+    height: max-content
 
 
   &__sidebar-item
@@ -112,7 +121,12 @@
     width: 150px
     height: 150px
 
-  &__sidebar-text
+  &__sidebar-text .h2
+    @media screen and (max-width: 639px)
+      font-size: 16px
+
+
+
 
 
 

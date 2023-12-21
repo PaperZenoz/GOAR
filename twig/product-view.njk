@@ -25,15 +25,15 @@
             <div class="{{ _ }}__wrap">
                 <div class="{{ _ }}__slider">
                     <div class="{{ _ }}__slider-pagination">
-                        {% for i in range(1, 6) %}
-                            <a href="#" class="{{ _ }}__slider-pagination-item img img--contain">
+                        {% for i in range(1, 3) %}
+                            <div class="{{ _ }}__slider-pagination-item img img--contain">
                                 <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
-                            </a>
+                            </div>
                         {% endfor %}
 
                     </div>
                     <div class="{{ _ }}__slider-core">
-                        {% for i in range(1, 6) %}
+                        {% for i in range(1, 3) %}
                             <a href="images/{{ _ }}/{{ loop.index }}.jpg" data-fancybox=""
                                class="{{ _ }}__slider-core-item img">
                                 <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
@@ -85,6 +85,7 @@
                         </div>
                     </div>
 
+                    <div class="gap"></div>
                     <div class="{{ _ }}__footer">
                         <div class="{{ _ }}__counter">
                             <button class="{{ _ }}__decrement {{ _ }}__counter-button">
@@ -99,9 +100,9 @@
                             <button class="{{ _ }}__increment {{ _ }}__counter-button">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                                     width="17px" viewBox="0 0 36 34">
-                                    <path fill-rule="evenodd" fill="black"
-                                          d="M1.3748779,14.0 C1.3748779,14.0 34.03125,14.0 34.03125,14.0 C34.03125,14.0 34.03125,20.999878 34.03125,20.999878 C34.03125,20.999878 1.3748779,20.999878 1.3748779,20.999878 C1.3748779,20.999878 1.3748779,14.0 1.3748779,14.0 ZM14.21875,1.2811279 C14.21875,1.2811279 21.218872,1.2811279 21.218872,1.2811279 C21.218872,1.2811279 21.218872,32.875122 21.218872,32.875122 C21.218872,32.875122 14.21875,32.875122 14.21875,32.875122 C14.21875,32.875122 14.21875,1.2811279 14.21875,1.2811279 Z"/>
+                                     width="17px"  viewBox="0 0 36 34">
+                                    <path fill-rule="evenodd"  fill="#ebd7ff"
+                                          d="M1.3749695,14.000244 C1.3749695,14.000244 34.03122,14.000244 34.03122,14.000244 C34.03122,14.000244 34.03122,21.0 34.03122,21.0 C34.03122,21.0 1.3749695,21.0 1.3749695,21.0 C1.3749695,21.0 1.3749695,14.000244 1.3749695,14.000244 ZM14.21875,1.2810059 C14.21875,1.2810059 21.21875,1.2810059 21.21875,1.2810059 C21.21875,1.2810059 21.21875,32.875244 21.21875,32.875244 C21.21875,32.875244 14.21875,32.875244 14.21875,32.875244 C14.21875,32.875244 14.21875,1.2810059 14.21875,1.2810059 Z"/>
                                 </svg>
                             </button>
 
