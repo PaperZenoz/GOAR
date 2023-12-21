@@ -17,29 +17,303 @@
         </div>
 
     </div>
-    
-    
+
+
     {% set  _ = 'product-view' %}
-    <div class="{{_}}">
+    <div class="{{ _ }}">
         <div class="container">
-            <div class="{{_}}__wrap">
-                <div class="{{_}}__slider">
-                    <div class="{{_}}__slider-pagination">
+            <div class="{{ _ }}__wrap">
+                <div class="{{ _ }}__slider">
+                    <div class="{{ _ }}__slider-pagination">
                         {% for i in range(1, 6) %}
-                            <a href="#" class="{{_}}__slider-pagination-item img">
+                            <a href="#" class="{{ _ }}__slider-pagination-item img img--contain">
                                 <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
                             </a>
                         {% endfor %}
 
                     </div>
-                    <div class="{{_}}__slider-core">
+                    <div class="{{ _ }}__slider-core">
                         {% for i in range(1, 6) %}
-                        <a href="images/{{ _ }}/{{ loop.index }}.jpg" data-fancybox="" class="{{_}}__slider-core-item img">
-                            <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
-                        </a>
+                            <a href="images/{{ _ }}/{{ loop.index }}.jpg" data-fancybox=""
+                               class="{{ _ }}__slider-core-item img">
+                                <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+                            </a>
                         {% endfor %}
                     </div>
                 </div>
+                <div class="{{ _ }}__content">
+                    <div class="{{ _ }}__stars">
+                        {% for i in range(1, 5) %}
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="20px" viewBox="0 0 41 41">
+                                <path fill-rule="evenodd" fill="black"
+                                      d="M20.413818,1.013855 C20.413818,1.013855 26.28711,13.642456 26.28711,13.642456 C26.28711,13.642456 39.625,15.561523 39.625,15.561523 C39.625,15.561523 29.916992,25.287048 29.916992,25.287048 C29.916992,25.287048 32.28723,39.102783 32.28723,39.102783 C32.28723,39.102783 20.413818,32.48407 20.413818,32.48407 C20.413818,32.48407 8.54126,39.102783 8.54126,39.102783 C8.54126,39.102783 10.911377,25.287048 10.911377,25.287048 C10.911377,25.287048 1.2027588,15.561523 1.2027588,15.561523 C1.2027588,15.561523 14.5407715,13.642456 14.5407715,13.642456 C14.5407715,13.642456 20.413818,1.013855 20.413818,1.013855 Z"/>
+                            </svg>
+                        {% endfor %}
+
+                    </div>
+                    <div class="gap"></div>
+                    <div>
+                        Карандаш для губ
+                    </div>
+                    <h1 class="h1">PINK BLUSH</h1>
+                    <div class="{{ _ }}__price">
+                        5.000 ₽
+                    </div>
+                    <div class="gap"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="gap"></div>
+                    <div class="{{ _ }}__colors">
+                        <span>Выберите цвет:</span>
+                        <br>
+                        <div class="{{ _ }}__colors-list">
+                            {% set  list = [
+                                '#e1aada',
+                                '#c97070',
+                                '#b40000',
+                                '#e1aada',
+                                '#c97070'] %}
+
+                            {% for item in list %}
+                                <label class="{{ _ }}__color">
+                                    <input type="radio" name="color" checked>
+                                    <span style="background-color: {{ item }}"></span>
+                                </label>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="{{ _ }}__footer">
+                        <div class="{{ _ }}__counter">
+                            <button class="{{ _ }}__decrement {{ _ }}__counter-button">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="17px" viewBox="0 0 34 9">
+                                    <path fill-rule="evenodd" fill="black"
+                                          d="M1.1248779,1.0 C1.1248779,1.0 32.625,1.0 32.625,1.0 C32.625,1.0 32.625,7.999878 32.625,7.999878 C32.625,7.999878 1.1248779,7.999878 1.1248779,7.999878 C1.1248779,7.999878 1.1248779,1.0 1.1248779,1.0 Z"/>
+                                </svg>
+                            </button>
+                            <input type="text" class="{{ _ }}__counter-input input" value="1">
+                            <button class="{{ _ }}__increment {{ _ }}__counter-button">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="17px" viewBox="0 0 36 34">
+                                    <path fill-rule="evenodd" fill="black"
+                                          d="M1.3748779,14.0 C1.3748779,14.0 34.03125,14.0 34.03125,14.0 C34.03125,14.0 34.03125,20.999878 34.03125,20.999878 C34.03125,20.999878 1.3748779,20.999878 1.3748779,20.999878 C1.3748779,20.999878 1.3748779,14.0 1.3748779,14.0 ZM14.21875,1.2811279 C14.21875,1.2811279 21.218872,1.2811279 21.218872,1.2811279 C21.218872,1.2811279 21.218872,32.875122 21.218872,32.875122 C21.218872,32.875122 14.21875,32.875122 14.21875,32.875122 C14.21875,32.875122 14.21875,1.2811279 14.21875,1.2811279 Z"/>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <a href="#" class="btn">В КОРЗИНУ</a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="{{ _ }}__info">
+                <div class="{{ _ }}__info-header">
+                    <div class="{{ _ }}__info-header-buttons">
+                        <div class="{{ _ }}__info-header-item active">
+                            Отзывы
+                        </div>
+                        <div class="{{ _ }}__info-header-item">
+                            Характеристики Продукта
+                        </div>
+                    </div>
+
+                    <div class="{{ _ }}__info-header-rating">
+                        <strong>5.0</strong>
+                        <div class="{{ _ }}__info-header-stars">
+                            {% for i in range(1, 5) %}
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="15px" viewBox="0 0 31 29">
+                                    <path fill-rule="evenodd" fill="#f4d922"
+                                          d="M15.598389,1.0097656 C15.598389,1.0097656 19.75879,9.955322 19.75879,9.955322 C19.75879,9.955322 29.206787,11.314819 29.206787,11.314819 C29.206787,11.314819 22.330078,18.204224 22.330078,18.204224 C22.330078,18.204224 24.00879,27.990479 24.00879,27.990479 C24.00879,27.990479 15.598389,23.301758 15.598389,23.301758 C15.598389,23.301758 7.1882324,27.990479 7.1882324,27.990479 C7.1882324,27.990479 8.8671875,18.204224 8.8671875,18.204224 C8.8671875,18.204224 1.9899902,11.314819 1.9899902,11.314819 C1.9899902,11.314819 11.437988,9.955322 11.437988,9.955322 C11.437988,9.955322 15.598389,1.0097656 15.598389,1.0097656 Z"/>
+                                </svg>
+                            {% endfor %}
+
+                        </div>
+                        <span>276 Reviews</span>
+
+                    </div>
+
+
+                </div>
+                <div class="{{ _ }}__info-body">
+                    {% for i in range(1, 3) %}
+                        <div class="{{ _ }}__info-review">
+                            <strong>JOHN DOE</strong>
+                            <div class="gap"></div>
+                            <div class="{{ _ }}__review-data">
+                                <div class="{{ _ }}__review-stars">
+                                    {% for i in range(1, 5) %}
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             width="15px" viewBox="0 0 31 29">
+                                            <path fill-rule="evenodd" fill="#f4d922"
+                                                  d="M15.598389,1.0097656 C15.598389,1.0097656 19.75879,9.955322 19.75879,9.955322 C19.75879,9.955322 29.206787,11.314819 29.206787,11.314819 C29.206787,11.314819 22.330078,18.204224 22.330078,18.204224 C22.330078,18.204224 24.00879,27.990479 24.00879,27.990479 C24.00879,27.990479 15.598389,23.301758 15.598389,23.301758 C15.598389,23.301758 7.1882324,27.990479 7.1882324,27.990479 C7.1882324,27.990479 8.8671875,18.204224 8.8671875,18.204224 C8.8671875,18.204224 1.9899902,11.314819 1.9899902,11.314819 C1.9899902,11.314819 11.437988,9.955322 11.437988,9.955322 C11.437988,9.955322 15.598389,1.0097656 15.598389,1.0097656 Z"/>
+                                        </svg>
+                                    {% endfor %}
+                                </div>
+                                <span>19/10/2023</span>
+                            </div>
+
+                            <div class="gap"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur illo
+                                ipsum itaque modi odit possimus rerum soluta? A amet aspernatur commodi consequuntur
+                                cumque dignissimos doloremque ducimus eos error ex excepturi facilis fugiat in neque
+                                nesciunt perspiciatis porro quia quod quos ratione rem repellendus repudiandae soluta
+                                tempore, ullam velit vero voluptate. Blanditiis corporis enim est facilis fuga illum in
+                                incidunt inventore maxime mollitia necessitatibus neque nostrum officia perspiciatis
+                                possimus quae ratione, repellat soluta sunt veniam veritatis voluptas voluptatem
+                                voluptatibus? Adipisci aperiam beatae commodi dicta dolorem, dolores ea eaque eos modi
+                                molestiae non odit, optio quam quibusdam repudiandae saepe sunt, tenetur.</p>
+
+                        </div>
+                    {% endfor %}
+
+                    <div class="{{ _ }}__review-button">
+                        <a href="#" class="btn btn--white">Смотреть все отзывы</a>
+                    </div>
+                </div>
+                <div class="{{ _ }}__info-body" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor maiores reiciendis sunt?
+                        Pariatur soluta tempore unde. Ab accusantium aliquam asperiores atque autem corporis dicta
+                        dolor, ex explicabo id itaque laborum, omnis quas quibusdam tempore? Aut beatae blanditiis
+                        delectus dicta explicabo, id ipsum maxime optio sapiente sed similique unde vel veritatis. A
+                        accusamus accusantium animi aperiam aspernatur eum exercitationem fuga ipsum magni quidem, quo
+                        recusandae reiciendis, sunt tenetur totam ullam velit vitae? Aperiam atque autem blanditiis
+                        consequuntur dignissimos distinctio dolore doloremque facere fugit inventore ipsum laudantium,
+                        maxime, minus nihil perspiciatis praesentium, quidem unde. Aliquam at consectetur consequatur
+                        cumque dicta doloremque eius enim est eveniet fuga fugiat hic magni minima necessitatibus neque
+                        nesciunt obcaecati, pariatur perspiciatis porro, quia quis ratione rem sapiente sed sequi
+                        temporibus ullam? At consequuntur deleniti eos facere incidunt ipsum perferendis quibusdam
+                        reprehenderit tempora voluptatem. Accusantium alias aperiam, architecto aspernatur at
+                        consequuntur corporis cupiditate debitis deserunt dolorum, eaque earum eligendi enim eos et eum
+                        eveniet ex facilis fuga harum impedit incidunt ipsa libero maxime molestias odit possimus
+                        praesentium qui quidem quo rem rerum similique tenetur veniam vitae voluptate voluptates. Animi
+                        architecto autem beatae corporis, esse excepturi inventore laudantium nam provident recusandae!
+                        Ad adipisci amet asperiores doloremque, earum eveniet exercitationem fugiat impedit
+                        necessitatibus nobis omnis, pariatur perferendis provident recusandae rerum sapiente tempora.
+                        Aliquid commodi cumque delectus doloremque, eius esse eum exercitationem illo ipsam pariatur
+                        quaerat quidem quos ratione ullam unde veritatis vero voluptate? Aliquid amet animi aperiam
+                        assumenda beatae cum debitis deleniti dicta dolor ducimus earum eius et explicabo, itaque maxime
+                        modi molestiae nemo neque odit pariatur quae quam quia recusandae saepe soluta temporibus
+                        tenetur. Aut blanditiis porro quia sit voluptas! Adipisci culpa dicta dolorem doloremque ea est
+                        eum exercitationem illum impedit itaque magni molestiae natus nemo nesciunt non nulla odit omnis
+                        optio perferendis perspiciatis, praesentium quaerat quas quasi qui quidem quis quo repellat
+                        repudiandae saepe similique sit soluta tenetur veniam. Cumque deleniti distinctio ex explicabo
+                        ipsam labore laudantium libero minima molestiae molestias nesciunt obcaecati pariatur
+                        perferendis provident quia, quidem quod rerum sequi sit sunt ullam vel vitae voluptates.
+                        Asperiores, assumenda culpa doloribus earum et eum exercitationem explicabo ipsam itaque nemo
+                        nulla perspiciatis quas quibusdam rerum veniam. A ad aut dolores dolorum ea magnam
+                        necessitatibus numquam reiciendis rerum sunt. Aliquam architecto atque autem beatae consectetur
+                        culpa cum doloribus ea error est et ex exercitationem facere fugiat harum impedit ipsam laborum
+                        minima modi, molestias porro praesentium quae quaerat quam quas, quia, quis quos recusandae
+                        repellendus similique sint sit temporibus ullam vero vitae voluptate voluptates? Accusantium,
+                        consequuntur dignissimos ea, esse et illum ipsa libero maxime modi natus nostrum obcaecati
+                        pariatur perferendis rem, soluta temporibus unde? Excepturi, hic itaque laborum modi nobis
+                        pariatur quas quasi. Animi autem cum deserunt, dicta dolores placeat ratione. Animi aspernatur
+                        nihil repellendus ullam voluptas. Architecto blanditiis consectetur consequatur, corporis cumque
+                        deserunt dignissimos dolore ducimus eos est id, labore minima nisi odio quo ratione repellendus
+                        sequi suscipit ullam vel velit veniam voluptate? Accusamus aliquam atque beatae debitis dicta
+                        dolore doloribus enim et, fugiat fugit harum hic id illo ipsa laborum nam natus nobis non nulla
+                        odit perferendis placeat, ratione recusandae reiciendis repellendus saepe sapiente sed soluta
+                        velit vitae! Ea excepturi fugiat ipsa numquam possimus repellendus sint vel. Dolorem facere fuga
+                        id nam nostrum omnis perferendis repellendus repudiandae sapiente suscipit! Cupiditate enim in
+                        labore laudantium nam nulla quaerat soluta! Aut autem consequuntur eum officia recusandae sed
+                        vero. Asperiores, praesentium repellat. A assumenda commodi eveniet id porro possimus quia
+                        totam? Alias dignissimos explicabo ipsa. Adipisci blanditiis corporis culpa deserunt eum facere,
+                        maiores necessitatibus neque quaerat voluptate! Adipisci asperiores blanditiis deleniti dolor
+                        doloremque enim et excepturi in laborum libero maxime natus nemo neque nulla numquam odit
+                        possimus quaerat quam quia, quo reiciendis velit, voluptates voluptatum. Alias aut beatae
+                        blanditiis commodi consectetur cumque cupiditate dolore doloribus dolorum eaque eius enim error
+                        explicabo illo iste laudantium libero magnam minima minus natus necessitatibus nemo nesciunt
+                        nihil nostrum omnis, optio perspiciatis quam qui quibusdam quo ratione recusandae soluta
+                        suscipit totam ut voluptatibus voluptatum? Alias consectetur cum cupiditate debitis delectus
+                        dolor dolores doloribus ea eaque eius enim eos excepturi expedita illo incidunt ipsam magnam
+                        magni modi necessitatibus nobis nostrum numquam odit, perferendis possimus qui saepe sapiente
+                        sit sunt tenetur voluptate! Accusamus consequuntur expedita hic laborum nam sint voluptates? Ad
+                        aliquid amet animi beatae cupiditate distinctio dolor doloribus eaque eius eligendi enim error
+                        est excepturi magnam, maiores minima necessitatibus nesciunt odit possimus quasi quisquam
+                        recusandae rem repudiandae saepe similique, totam, voluptas voluptatum! Ad alias aspernatur
+                        dolore, enim excepturi expedita facere fugit harum itaque labore magni nihil numquam provident
+                        sequi veritatis voluptas voluptate? Ad aliquam assumenda debitis eius excepturi hic magni
+                        ratione unde vel velit. A aliquam autem, delectus dicta dolor eligendi eos error esse est eum
+                        expedita explicabo fugiat in ipsum itaque labore laboriosam magnam maxime non officiis omnis rem
+                        reprehenderit soluta tempore temporibus totam veritatis. Ad explicabo id iste laboriosam magni
+                        molestiae nostrum porro, vel! Accusamus alias blanditiis consequatur, culpa, cum cumque
+                        cupiditate dolor doloribus dolorum eos eveniet ex facere fuga minima mollitia nihil nobis non
+                        nulla pariatur placeat provident quibusdam repellat soluta tempore, totam unde ut vero. Aliquam
+                        animi asperiores culpa deserunt, doloribus excepturi id illum, ipsa necessitatibus nobis numquam
+                        obcaecati, qui quia quod ratione reiciendis suscipit ullam velit? Aliquam asperiores consequatur
+                        dolorem dolorum eaque eius eligendi et eum facilis fuga hic magni nobis obcaecati quasi quidem
+                        quisquam recusandae sapiente, sed, sit totam unde voluptate voluptates! Autem delectus ducimus
+                        iure modi nemo nobis non, perspiciatis quisquam sit totam. Ab asperiores atque delectus, dolorum
+                        eligendi facilis laudantium maiores maxime minima nihil, quod quos repudiandae sapiente, tempora
+                        tenetur vero voluptate? A cupiditate debitis distinctio doloremque, ex illo iure molestiae
+                        necessitatibus nemo officia quod reprehenderit rerum, sequi veniam voluptatibus. Ab aliquam
+                        aperiam earum laboriosam numquam perferendis quo reiciendis suscipit, vel voluptatem. Deserunt
+                        dicta harum ipsa, iure obcaecati quia voluptate. Aliquam assumenda aut delectus dolorem et iste
+                        iusto neque nobis officia provident qui quo repudiandae sed tempora tempore, veritatis
+                        voluptatibus. Cupiditate doloremque exercitationem quae? Consequatur ea est hic in iste
+                        laboriosam nostrum quidem repellat sunt voluptate! Nobis quis, similique.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    {% set  _ = 'more-products' %}
+    <div class="{{ _ }}">
+        <div class="container">
+            <h2 class="h2">ВАМ ТАКЖЕ МОЖЕТ ПОНРАВИТЬСЯ</h2>
+            <div class="{{ _ }}__wrap">
+
+
+                {% set  list = [{
+                    title: 'Тональный крем',
+                    subtitle: 'FAIRE 01'
+
+                },    {
+                    title: 'Карандаш для бровей',
+                    subtitle: 'BROW LOVE'
+                },   {
+                    title: 'Помада для губ',
+                    subtitle: 'ROSE'
+                },   {
+                    title: 'Каял',
+                    subtitle: 'PANTHER'
+                },   {
+                    title: 'Тональный крем',
+                    subtitle: 'FAIRE 01'
+                }] %}
+
+                {% for item in list %}
+                    <div class="{{ _ }}__item">
+                        <div class="{{ _ }}__img img">
+                            <img src="images/{{ _ }}/{{ loop.index }}.png" alt=""/>
+                        </div>
+                        <div class="gap"></div>
+                        <span>{{ item.title }}</span>
+                        <h3 class="h3">{{ item.subtitle }}</h3>
+                        <span class="{{ _ }}__price">
+                        5.000 ₽
+                    </span>
+                        <div class="gap"></div>
+                        <a href="#" class="btn">ПОДРОБНЕЕ</a>
+
+                    </div>
+                {% endfor %}
+
+
             </div>
         </div>
 

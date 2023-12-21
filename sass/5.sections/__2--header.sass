@@ -16,8 +16,23 @@
       padding: 20px
       flex-direction: column
       top: 100%
+      right: 0
+      left: 0
+      z-index: 1
       display: none
+      
+  &__nav-item
+    @media screen and (max-width: 1023px)
+      padding: 5px
+      display: block
+      &:hover
+        background-color: $main-color
 
+  &__burger
+    display: none
+    cursor: pointer
+    @media screen and (max-width: 1023px)
+      display: block
 
 
   &__buttons
