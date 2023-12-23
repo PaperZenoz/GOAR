@@ -1,5 +1,5 @@
 .about-us-banner
-  @include py(130px, 100px, 80px, 60px, 30px)
+  @include py(80px, 80px, 80px, 60px, 30px)
   background-image: url("../../images/about-us-banner/1.jpg")
   background-position: center
   background-repeat: no-repeat
@@ -11,7 +11,7 @@
 
   &__wrap
     text-align: center
-    max-width: 650px
+    max-width: 670px
     margin: 0 auto
     @media screen and (max-width: 639px)
       height: 470px
@@ -22,8 +22,9 @@
 
     .h1
       @extend %up
-      @include f(60px, 50px, 40px, 40px, 40px)
+      @include f(68px, 50px, 40px, 40px, 40px)
       @extend %700
+      margin-bottom: 30px
       @media screen and (max-width: 639px)
         margin-bottom: 20px
 
@@ -31,7 +32,7 @@
 .about-us-core
 
   &__block
-    @include py(130px, 100px, 80px, 60px, 30px)
+    @include py(100px, 100px, 80px, 60px, 30px)
     @include px(30px, 30px, 20px, 20px, 10px)
 
 
@@ -43,31 +44,47 @@
       display: block
 
 
-    &:nth-child(3) .about-us-core__content
-      margin-left: auto
-      &:before
-        content: ''
-        height: 250px
-        position: absolute
-        display: block
-        width: 100vw
-        background-color: $main-color
-        right: 0
-        transform: translate(100%, -50%)
-        top: 50%
+    &:nth-child(3)
+      @include py(130px, 100px, 80px, 60px, 30px)
+
+      .about-us-core__content
+
+        margin-left: auto
+        margin-right: 170px
+        max-width: 500px
         @media screen and (max-width: 1023px)
-        	display: none
+          max-width: 100%
+          margin-right: 0
 
 
-
+        &:before
+          content: ''
+          height: 250px
+          position: absolute
+          display: block
+          width: 380px
+          background-color: $main-color
+          right: 0
+          transform: translate(75%, -50%)
+          top: 50%
+          @media screen and (max-width: 1023px)
+            display: none
 
 
     &:nth-child(2)
-      @include pt(130px, 100px, 80px, 80px, 80px)
       background-color: $main-color
       width: 85%
+
+      strong
+        font-size: 20px
+        @media screen and (max-width: 639px)
+          font-size: 16px
+          margin-top: 30px
+
+
       @media screen and (max-width: 1023px)
         width: 100%
+
       &:before
         content: ''
         height: 100%
@@ -78,6 +95,7 @@
         left: 0
         top: 0
         transform: translateX(-100%)
+
       &:after
         content: ''
         height: 100%
@@ -89,24 +107,21 @@
         transform: translateX(100%)
         display: none
         @media screen and (max-width: 1023px)
-        	display: block
-
-
-
+          display: block
 
 
   &__content
-    max-width: 600px
+    max-width: 650px
     @media screen and (max-width: 1919px)
       max-width: 100%
 
   &__mobile-right
-      text-align: right
+    text-align: right
 
 
   &__img
     position: absolute
-    width: 50%
+    width: 620px
     z-index: 1
     right: 0
     top: 0
@@ -123,11 +138,16 @@
     @media screen and (max-width: 639px)
       width: 100%
       margin-left: auto
+      margin-top: 30px
 
+
+  &__block:nth-child(1)
+    .about-us-core__content
+      max-width: 620px
 
   &__block:nth-child(3)
     .about-us-core__img
-      width: 25%
+      width: 420px
       right: auto
       left: 100px
       top: 60px
@@ -137,9 +157,10 @@
         left: 0
         margin-bottom: -0px
 
+
 .about-us-footer
 
-  @include py(130px, 100px, 80px, 60px, 30px)
+  @include py(70px, 70px, 70px, 60px, 30px)
   background-image: url("../../images/about-us-footer/1.jpg")
   background-size: cover
   background-repeat: no-repeat
@@ -151,10 +172,14 @@
     background-position: bottom
 
 
-
-
   &__content
-    max-width: 580px
+    strong
+      font-size: 20px
+      @media screen and (max-width: 1023px)
+        font-size: 16px
+
+
+    max-width: 610px
     @media screen and (max-width: 1919px)
       max-width: 100%
 
@@ -164,7 +189,7 @@
     width: 50%
     @media screen and (max-width: 639px)
       width: 85%
-      margin: 50px auto 0
+      margin: 25px auto 0
     
     	
     

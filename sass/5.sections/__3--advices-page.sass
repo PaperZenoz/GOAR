@@ -10,21 +10,24 @@
     margin-bottom: 50px
     @extend %fy
     gap: 10px
+    padding: 20px
+    background-color: #fafafa
+    display: inline-flex
 
     svg
       transform: scale(0.7)
 
   &__wrap
     display: grid
-    grid-template-columns: auto 400px
+    grid-template-columns: auto 300px
     grid-gap: 30px
     @media screen and (max-width: 1366px)
       grid-template-columns: 1fr
 
 
   &__img
-    width: 340px
-    height: 340px
+    width: 420px
+    height: 420px
     flex-shrink: 0
     @media screen and (max-width: 1023px)
       width: 290px
@@ -51,6 +54,7 @@
     border: 3px solid $main-color
     @include r(24px)
     @media screen and (max-width: 639px)
+      padding: 5px 10px
       font-size: 13px
 
 
@@ -63,6 +67,7 @@
 
   &__num
     font-size: 130px
+    line-height: 1
     @extend %700
     color: $main-color
     position: relative
@@ -79,8 +84,11 @@
 
   &__item
     width: 100%
-    padding: 30px
+    padding: 60px
     text-align: center
+
+    > strong, > span
+      font-size: 20px
 
     &:nth-child(1)
       background-color: #fafafa
@@ -104,6 +112,9 @@
     @media screen and (max-width: 639px)
       height: 170px
 
+  &__video-block
+    padding-bottom: 70px
+    border-bottom: 2px solid $main-color
 
   &__sidebar
     position: sticky
@@ -118,12 +129,18 @@
     @extend %lc
 
   &__sidebar-img
-    width: 150px
-    height: 150px
+    width: 115px
+    height: 115px
 
-  &__sidebar-text .h2
-    @media screen and (max-width: 639px)
-      font-size: 16px
+  &__sidebar-text
+    font-size: 14px
+
+    .h2
+      font-size: 17px
+      margin-bottom: 0
+      @media screen and (max-width: 639px)
+        font-size: 16px
+
 
 
 

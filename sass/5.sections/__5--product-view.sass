@@ -1,6 +1,6 @@
 
 .product-view
-  @include py(130px, 100px, 80px, 60px, 30px)
+  padding-top: 50px
 
   &__wrap
     display: grid
@@ -9,13 +9,11 @@
     @media screen and (max-width: 1366px)
       grid-template-columns: 1fr
 
-
   &__slider
     display: flex
     gap: 30px
     @media screen and (max-width: 1023px)
       flex-direction: column-reverse
-
 
   &__slider-core
     width: 500px
@@ -52,10 +50,8 @@
       left: 30px
       transform: translateY(-50%)
       @media screen and (max-width: 1023px)
-      	left: 15px
-      
-      	
-      
+        left: 15px
+
 
       [role="presentation"]
         width: 10px
@@ -66,6 +62,12 @@
 
         &.slick-active
           background-color: $black
+          position: relative
+          border: 2px solid $white
+          outline: 2px solid $main-color
+          width: 14px
+          height: 14px
+          left: -2px
 
 
   &__slider-core-item
@@ -78,7 +80,6 @@
       width: 290px
       height: 290px
 
-
   &__slider-pagination
     width: 150px
     display: flex
@@ -87,7 +88,6 @@
       width: 600px
     @media screen and (max-width: 639px)
       width: 290px
-
 
   &__slider-pagination-item
     width: 150px
@@ -99,13 +99,22 @@
       width: 85px
       height: 85px !important
 
-
   &__stars
     @extend %fy
     gap: 5px
+    margin-bottom: 25px
+    @media screen and (max-width: 639px)
+    	margin-bottom: 0
+    
+    	
+    
 
   &__content .h1
+    font-size: 55px
     margin-bottom: 10px
+    @media screen and (max-width: 639px)
+      font-size: 40px
+
 
   &__content
     @media screen and (max-width: 1365px)
@@ -117,6 +126,8 @@
       gap: 10px
       text-align: center
 
+  &__name
+    font-size: 20px
 
   &__price
 
@@ -147,8 +158,8 @@
 
   &__color
     span
-      width: 45px
-      height: 45px
+      width: 55px
+      height: 55px
       display: inline-block
       background-color: $black
       cursor: pointer
@@ -158,32 +169,40 @@
       position: absolute
 
       &:checked + span
-        border: 3px solid $black
+        border: 3px solid $white
+        outline: 3px solid $main-color
 
   &__counter
     display: inline-flex
     border: 2px solid #ececec
 
   &__counter-button
-    width: 48px
-    height: 48px
+    width: 66px
+    height: 66px
     @extend %fc
     cursor: pointer
     background-color: $white
     border: none
 
   &__counter-input
-    width: 48px
+    width: 66px
     border-left: 2px solid #ececec
     border-right: 2px solid #ececec
     @extend %700
     font-family: 'Montserrat', sans-serif
     text-align: center
-    font-size: 20px
+    font-size: 28px
+    height: 66px
 
   &__footer
     @extend %fy
     gap: 15px
+
+    .btn
+      width: 310px
+      height: 66px
+      font-size: 20px
+
     @media screen and (max-width: 639px)
       flex-direction: column
       .btn
@@ -192,6 +211,7 @@
 
   &__info
     font-family: 'Roboto', sans-serif
+    margin-bottom: 70px
 
 
   &__info-header-buttons
@@ -249,8 +269,11 @@
 
 
   &__info-body
-    padding: 30px
+
     border: 1px solid #e3e3e3
+
+  &__info-review-wrap
+    padding: 30px 30px 30px
 
   &__info-review
     padding-bottom: 30px
@@ -267,6 +290,12 @@
   &__review-button
     @extend %fc
     @extend %up
+    padding: 30px
+    background-color: #fafafa
+    .btn
+      width: 300px
+      height: 50px
+      background-color: $transparent
 
   &__review-data
     display: flex
@@ -274,8 +303,10 @@
 
 
 .more-products
-  @include py(130px, 100px, 80px, 60px, 30px)
+  @include pt(130px, 100px, 80px, 60px, 30px)
+
   position: relative
+
   &:before
     content: ''
     display: block
@@ -292,15 +323,14 @@
     text-align: center
 
   &__wrap
-    @include pt(130px, 100px, 80px, 60px, 30px)
+    @include py(130px, 100px, 80px, 60px, 30px)
+    border-bottom: 2px solid $main-color
     display: grid
     @include g(5, 4, 3, 1, 1)
     grid-gap: 30px
     @media screen and (max-width: 1023px)
       grid-gap: 60px
-    
-    	
-    
+
 
   &__item
     text-align: center
