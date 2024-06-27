@@ -1,0 +1,134 @@
+{% set page = { title: 'Главная' } %}
+{% extends "./2.parts/main.njk" %}
+{% block content %}
+    {% set  _ = 'general-banner' %}
+    <div class="{{ _ }}">
+        <div class="container">
+            <div class="{{ _ }}__wrap">
+                <h1 class="h1">декоративная <br> косметика</h1>
+                <span>от Гоар Аветисян</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    {% set  _ = 'general-products' %}
+    <div class="{{ _ }}">
+
+
+        {% set  list = [
+            'Карандаш для ГЛАЗ',
+            'Карандаш для губ',
+            'Карандаш для Бровей'] %}
+
+        {% for item in list %}
+            <a href="#" class="{{ _ }}__item img">
+                <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+                <span>{{ item }}</span>
+            </a>
+        {% endfor %}
+    </div>
+
+
+    {% set  _ = 'general-hits' %}
+    <div class="{{ _ }} section">
+        <div class="container">
+            <h2 class="inner-page-title">Хиты продаж</h2>
+            <div class="{{ _ }}__wrap">
+                {% set  list = [{
+                    title: 'Карандаш для губ',
+                    subtitle: 'cappuccino'
+
+                },    {
+                    title: 'Карандаш для глаз',
+                    subtitle: 'FRESH BLUE'
+                },   {
+                    title: 'Карандаш для бровей',
+                    subtitle: 'TAUPE'
+                },   {
+                    title: 'Карандаш для губ',
+                    subtitle: 'rolls royce'
+                },   {
+                    title: 'Карандаш для бровей',
+                    subtitle: 'DARK BROWN'
+                },   {
+                    title: 'Карандаш для губ',
+                    subtitle: 'NUDE ROSE'
+                }] %}
+
+                {% for item in list %}
+                    <div class="{{ _ }}__item">
+                        <div class="{{ _ }}__img">
+                            <img src="images/{{ _ }}/{{ loop.index }}.png" alt=""/>
+                        </div>
+                        <div class="{{ _ }}__title">
+                            <span>{{ item.title }}</span>
+                            <strong>{{ item.subtitle }}</strong>
+                        </div>
+
+                        <div class="{{ _ }}__price">
+                            <strong>1090₽ </strong>
+                            <span>1990 ₽</span>
+                        </div>
+                        <a href="#" class="btn">
+                            В КОРЗИНУ
+                        </a>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+
+
+    {% set  _ = 'general-trands' %}
+    <div class="{{ _ }} section">
+        <div class="container">
+            <div class="{{ _ }}__wrap">
+                <div class="{{ _ }}__info">
+                    <h2 class="inner-page-title">Тренды</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore
+                        dolore magna aliqua.
+                    </p>
+                    <a href="#" class="btn btn--transparent">
+                        подробнее
+                    </a>
+                </div>
+                <div class="{{ _ }}__gallery">
+                    {% for i in range(2, 4) %}
+                        <div class="{{ _ }}__item img">
+                            <img src="images/{{ _ }}/{{ i }}.jpg" alt=""/>
+                        </div>
+                    {% endfor %}
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {% set  _ = 'general-about' %}
+    <div class="{{ _ }} section">
+        <div class="container">
+            <div class="{{ _ }}__wrap">
+                <div class="{{ _ }}__img img">
+                    <img src="images/{{ _ }}/1.png" alt=""/>
+                </div>
+                <div class="{{_}}__info">
+                    <h2 class="inner-page-title">О Бренде</h2>
+                    <p>Каждый продукт этой марки разработан в соответствии с потребностями и особенностями каждого типа кожи, исходя из опыта профессионального визажиста.</p>
+                    <a href="#" class="btn">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock content %}

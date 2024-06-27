@@ -1,0 +1,256 @@
+.general-banner
+  background-image: url("../../images/general-banner/1.jpg")
+  background-size: cover
+  background-position: center
+  @media screen and (max-width: 1023px)
+    background-image: url("../../images/general-banner/2.jpg")
+    aspect-ratio: 320 / 538
+
+  &__wrap
+    text-align: center
+    @extend %fc
+    flex-direction: column
+    height: 840px
+    @media screen and (max-width: 1023px)
+    	height: auto
+    
+    	
+    
+
+    .h1
+      font-size: clamp(1.563rem, calc(1.336rem + 1.13vw), 2.5rem)
+      @extend %up
+      margin: 220px 0px
+      @media screen and (max-width: 1023px)
+      	margin: 15px 0px 15px
+      
+      	
+      
+
+    span
+      font-size: clamp(0.938rem, calc(0.756rem + 0.91vw), 1.688rem)
+      @extend %up
+
+
+.general-products
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  @media screen and (max-width: 1023px)
+    grid-template-columns: 1fr
+
+
+  &__item
+    aspect-ratio: 547 / 456
+
+    span
+      position: absolute
+      font-size: clamp(1.563rem, calc(1.45rem + 0.56vw), 2.125rem)
+      @extend %up
+      @extend %700
+
+    &:nth-child(1) span
+      top: 50px
+      left: 50px
+      width: 230px
+      @media screen and (max-width: 1919px)
+        top: 30px
+        left: 30px
+
+
+    &:nth-child(2) span
+      bottom: 50px
+      width: 100%
+      text-align: center
+      @media screen and (max-width: 1919px)
+        bottom: 30px
+
+
+    &:nth-child(3) span
+      top: 50px
+      right: 50px
+      width: 250px
+      text-align: right
+      @media screen and (max-width: 1919px)
+        top: 30px
+        right: 30px
+
+
+.general-hits
+  .inner-page-title
+    text-align: center
+
+  &__img
+    margin-bottom: 40px
+
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    grid-gap: 30px
+    @media screen and (max-width: 1919px)
+      grid-template-columns: repeat(3, 1fr)
+    @media screen and (max-width: 1023px)
+      grid-template-columns: repeat(2, 1fr)
+    @media screen and (max-width: 639px)
+      grid-template-columns: repeat(1, 1fr)
+      grid-gap: 60px
+
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .btn
+      height: 60px
+      font-size: clamp(0.938rem, calc(0.862rem + 0.38vw), 1.25rem)
+      @media screen and (max-width: 1023px)
+        height: 44px
+
+  &__title
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 25px
+
+    strong
+      font-size: 20px
+      @extend %up
+      margin-top: 15px
+      position: relative
+      padding-bottom: 25px
+
+      &:before
+        content: ''
+        width: 80px
+        height: 5px
+        background-color: $main-color
+        display: block
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+
+  &__price
+    font-size: clamp(0.938rem, calc(0.862rem + 0.38vw), 1.25rem)
+    display: flex
+    gap: 10px
+    margin-bottom: 25px
+
+    span
+      text-decoration: line-through
+      color: $gray
+
+
+.general-trands
+  background-image: url("../../images/general-trands/1.jpg")
+  background-size: cover
+
+
+  .inner-page-title
+    margin-bottom: 30px
+    @media screen and (max-width: 1023px)
+      text-align: center
+
+
+  &__info
+    font-size: clamp(0.938rem, calc(0.862rem + 0.38vw), 1.25rem)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @media screen and (max-width: 1023px)
+      text-align: center
+
+
+  &__wrap
+    display: grid
+    grid-template-columns: 330px auto
+    grid-gap: 130px
+    aspect-ratio: 1644 / 761
+    @media screen and (max-width: 1023px)
+      grid-template-columns: 1fr
+      grid-gap: 65px
+
+
+    .btn
+      width: 100%
+      height: 75px
+      @extend %up
+      font-size: clamp(0.938rem, calc(0.862rem + 0.38vw), 1.25rem)
+      margin-top: 30px
+      @media screen and (max-width: 1023px)
+        height: 56px
+
+
+  &__item
+    aspect-ratio: 277 / 483
+
+    &:nth-child(1), &:nth-child(3)
+      position: relative
+      top: 90px
+      @media screen and (max-width: 1023px)
+        top: 0
+
+
+    &:nth-child(2)
+      @media screen and (max-width: 1023px)
+        bottom: 30px
+
+
+  &__gallery
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 25px
+    @media screen and (max-width: 1023px)
+      grid-gap: 10px
+
+
+.general-about
+  .inner-page-title
+    margin-bottom: 30px
+    @media screen and (max-width: 1023px)
+      position: absolute
+      top: 0
+      width: 100%
+      text-align: center
+
+
+  .btn
+    height: 74px
+    font-size: clamp(0.938rem, calc(0.862rem + 0.38vw), 1.25rem)
+    width: 340px
+    margin-top: 30px
+    @media screen and (max-width: 1023px)
+      width: 100%
+      height: 56px
+
+
+  &__img
+    aspect-ratio: 712 / 592
+
+  &__wrap
+    display: grid
+    grid-template-columns: 712px auto
+    grid-gap: 85px
+    position: relative
+    @media screen and (max-width: 1365px)
+      grid-template-columns: 1fr
+      grid-gap: 30px
+    @media screen and (max-width: 1023px)
+    	padding-top: 80px
+    
+    	
+    
+
+
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    text-align: right
+    font-size: clamp(0.938rem, calc(0.862rem + 0.38vw), 1.25rem)
+    @media screen and (max-width: 1023px)
+    	text-align: center
+    
+    	
+    

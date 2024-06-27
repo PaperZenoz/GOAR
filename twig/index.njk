@@ -41,4 +41,27 @@
     </div>
 
 
+<div class="container">
+    <h2 class="h2">25.06</h2>
+</div>
+
+
+    {% set  list = [{
+        title: 'Главная',
+        subtitle: 'general'
+    }] %}
+
+    <div class="container">
+        <div class="ancors section">
+            {% for item in list %}
+                <a href="{{ item.subtitle }}.html" class="btn" style="width: 100%">{{ item.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+
+
 {% endblock content %}
