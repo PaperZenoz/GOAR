@@ -1,0 +1,233 @@
+{% set page = { title: 'Карточка товара (новая)' } %}
+{% extends "./2.parts/main.njk" %}
+{% block content %}
+
+    {% set  bread = [
+        'Продукты',
+        'NUDE ROSE'] %}
+
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb__wrap">
+                {% for item in bread %}
+                    <a href="#" class="breadcrumb__link">{{ item }}</a>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+
+    {% set  _ = 'product-view' %}
+    <div class="{{ _ }}">
+        <div class="container">
+            <div class="{{ _ }}__wrap">
+                <div class="{{ _ }}__slider">
+                    <div class="{{ _ }}__slider-pagination">
+                        {% for i in range(1, 3) %}
+                            <div class="{{ _ }}__slider-pagination-item img img--contain">
+                                <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+                            </div>
+                        {% endfor %}
+
+                    </div>
+                    <div class="{{ _ }}__slider-core">
+                        {% for i in range(1, 3) %}
+                            <a href="images/{{ _ }}/{{ loop.index }}.jpg" data-fancybox=""
+                               class="{{ _ }}__slider-core-item img">
+                                <img src="images/{{ _ }}/{{ loop.index }}.jpg" alt=""/>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="{{ _ }}__content">
+                    <div class="gap"></div>
+                    <div class="{{ _ }}__name">
+                        Карандаш для губ
+                    </div>
+                    <h1 class="h1">NUDE ROSE</h1>
+                    <div class="{{ _ }}__price">
+                        <strong>1090₽</strong> <span>1990 ₽</span>
+                    </div>
+                    <div class="gap"></div>
+                    <p>Карандаш для губ - это универсальный косметический продукт, который помогает создать идеальный
+                        контур губ и улучшить стойкость губной помады...</p>
+
+                    <a data-fancybox href="#description" class="{{ _ }}__more-text">
+                        <strong>Полное Описание
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="14px" height="21px" viewBox="0 0 14 21">
+                                <path fill-rule="evenodd" fill="#000000"
+                                      d="M12.274292,10.537415 C12.274292,10.537415 3.0872803,1.7485962 3.0872803,1.7485962 C3.0872803,1.7485962 1.1634521,3.5891418 1.1634521,3.5891418 C1.1634521,3.5891418 8.426392,10.537415 8.426392,10.537415 C8.426392,10.537415 1.1634521,17.485535 1.1634521,17.485535 C1.1634521,17.485535 3.0872803,19.325958 3.0872803,19.325958 C3.0872803,19.325958 12.274292,10.537415 12.274292,10.537415 Z"/>
+                            </svg>
+                        </strong>
+                    </a>
+
+
+                    <div class="gap"></div>
+                    <div class="{{ _ }}__colors">
+                        <span>Выберите цвет:</span>
+                        <br>
+                        <div class="{{ _ }}__colors-list">
+                            {% set  list = [
+                                '#e1aada',
+                                '#c97070',
+                                '#b40000'] %}
+
+                            {% for item in list %}
+                                <label class="{{ _ }}__color">
+                                    <input type="radio" name="color" checked>
+                                    <span style="background-color: {{ item }}"></span>
+                                </label>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="gap"></div>
+                    <div class="{{ _ }}__footer">
+                        <div class="{{ _ }}__counter">
+                            <button class="{{ _ }}__decrement {{ _ }}__counter-button">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="17px" viewBox="0 0 34 9">
+                                    <path fill-rule="evenodd" fill="black"
+                                          d="M1.1248779,1.0 C1.1248779,1.0 32.625,1.0 32.625,1.0 C32.625,1.0 32.625,7.999878 32.625,7.999878 C32.625,7.999878 1.1248779,7.999878 1.1248779,7.999878 C1.1248779,7.999878 1.1248779,1.0 1.1248779,1.0 Z"/>
+                                </svg>
+                            </button>
+                            <input type="text" class="{{ _ }}__counter-input input" value="1">
+                            <button class="{{ _ }}__increment {{ _ }}__counter-button">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="17px" viewBox="0 0 36 34">
+                                    <path fill-rule="evenodd" fill="#ebd7ff"
+                                          d="M1.3749695,14.000244 C1.3749695,14.000244 34.03122,14.000244 34.03122,14.000244 C34.03122,14.000244 34.03122,21.0 34.03122,21.0 C34.03122,21.0 1.3749695,21.0 1.3749695,21.0 C1.3749695,21.0 1.3749695,14.000244 1.3749695,14.000244 ZM14.21875,1.2810059 C14.21875,1.2810059 21.21875,1.2810059 21.21875,1.2810059 C21.21875,1.2810059 21.21875,32.875244 21.21875,32.875244 C21.21875,32.875244 14.21875,32.875244 14.21875,32.875244 C14.21875,32.875244 14.21875,1.2810059 14.21875,1.2810059 Z"/>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <a href="#" class="btn">В КОРЗИНУ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    {% set  _ = 'more-products' %}
+    <div class="{{ _ }}">
+        <div class="container">
+            <h2 class="h2">ВАМ ТАКЖЕ МОЖЕТ ПОНРАВИТЬСЯ</h2>
+            <div class="{{ _ }}__wrap">
+
+
+                {% set  list = [{
+                    title: 'Тональный крем',
+                    subtitle: 'FAIRE 01'
+
+                },    {
+                    title: 'Карандаш для бровей',
+                    subtitle: 'BROW LOVE'
+                },   {
+                    title: 'Помада для губ',
+                    subtitle: 'ROSE'
+                },   {
+                    title: 'Каял',
+                    subtitle: 'PANTHER'
+                },   {
+                    title: 'Тональный крем',
+                    subtitle: 'FAIRE 01'
+                }] %}
+
+                {% for item in list %}
+                    <div class="{{ _ }}__item">
+                        <div class="{{ _ }}__img img">
+                            <img src="images/{{ _ }}/{{ loop.index }}.png" alt=""/>
+                        </div>
+                        <div class="gap"></div>
+                        <span>{{ item.title }}</span>
+                        <h3 class="h3">{{ item.subtitle }}</h3>
+                        <span class="{{ _ }}__price">
+                        <strong>1090₽ </strong>
+                            <span>1990 ₽</span>
+                    </span>
+                        <div class="gap"></div>
+                        <a href="#" class="btn">ПОДРОБНЕЕ</a>
+
+                    </div>
+                {% endfor %}
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    {% set  _ = 'description' %}
+    <div id="description" class="description">
+        <strong>Описание</strong> <br>
+        <p>Карандаш для губ - универсальный косметический продукт, который помогает создать идеальный контур губ и
+            улучшить стойкость губной помады. Он имеет нежную формулу, которая не сушит губы и придает им комфортное
+            ощущение. Карандаш также имеет стойкую формулу, которая помогает предотвратить смазывание помады и продлить
+            ее стойкость. Благодаря этому карандаш может выступать самостоятельным продуктом и заменить помаду.</p>
+
+        <div class="description__block">
+            <div class="description__row">
+                <div class="description__col">
+                    <strong>Состав</strong>
+                </div>
+                <div class="description__col">
+                    CI 77891; Mica; CI 77492; CI 77491; CAPRYLIC / CAPRIC TRIGLYCERIDE; BIS-DIGLYCERYL;
+                    polyacyladipate-2; Hydrogenated Olive Oil Myristyl Esters; C10-18 TRIGLYCERIDES; Polyethylene;
+                    HYDROGENATED COTTONSEED OIL; Hydrogenated Olive Oil Decyl Esters; CANDELILLA cera; COPERNICIA;
+                    CERIFERA CERA; tocopherol; ASCORBYL PALMITATE
+                </div>
+
+            </div>
+            <div class="description__row">
+                <div class="description__col">
+                    <strong>Срок годности</strong>
+                </div>
+                <div class="description__col">
+                    36 месяцев
+                </div>
+
+            </div>
+
+
+            <div class="description__row">
+                <div class="description__col">
+                    <strong>Страна производства</strong>
+                </div>
+                <div class="description__col">
+                    Чехия
+                </div>
+
+            </div>
+
+
+
+            <div class="description__row">
+                <div class="description__col">
+                    <strong>Вес товара без упаковки (г)</strong>
+                </div>
+                <div class="description__col">
+                    1.14 г
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+{% endblock content %}

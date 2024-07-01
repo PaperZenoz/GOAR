@@ -60,7 +60,6 @@ $(document).ready(function () {
         })
     }
 
-
     function review() {
         var $button = $('.product-view__info-header-item')
 
@@ -75,14 +74,21 @@ $(document).ready(function () {
         })
     }
 
-
     function burger() {
         $('.header__burger').on('click', function () {
-                $('.header__nav').toggle()
-            })
+            $('.header__nav').toggle()
+        })
+    }
+
+    function more_text() {
+        $('.product-view__more-text').on('click', function () {
+            $(this).find('p').slideDown()
+            $(this).find('strong').hide()
+        })
     }
 
     counter()
     review()
     burger()
+    // more_text()
 })
