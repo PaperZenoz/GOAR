@@ -1,0 +1,53 @@
+{% set page = { title: 'Логин' } %}
+{% extends "./2.parts/main.njk" %}
+{% block content %}
+    
+    {% set  _ = 'login' %}
+    <div class="{{ _ }}">
+        <div class="{{_}}__topline">
+            <a href="#" class="{{_}}__topline-button active">
+                Авторизация
+            </a>
+            <a href="#" class="{{_}}__topline-button">
+                Регистрация
+            </a>
+
+        </div>
+        <div class="{{_}}__main">
+            <div class="container">
+                <h2 class="{{_}}__title">
+                    Пожалуйста, авторизуйтесь
+                </h2>
+                
+                <form action="#" class="{{_}}__form">
+                    <div class="{{_}}__subtitle">
+                        Логин
+                    </div>
+                    <input type="text" class="input">
+                    <div class="{{_}}__subtitle">
+                        Пароль
+                    </div>
+                    <input type="text" class="input">
+
+                    <label>
+                        <input type="checkbox" class="checkbox">
+                        <div class="{{ _ }}__checkbox-label">Запомнить меня на этом компьютере</div>
+                    </label>
+
+                    <button class="btn">Войти</button>
+                    
+                    
+                    
+                    <div href="#" class="{{_}}__forgot">
+                        <a href="#">Забыли свой пароль?</a>
+                    </div>
+                
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock content %}

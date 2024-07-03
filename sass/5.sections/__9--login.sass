@@ -1,0 +1,99 @@
+.login
+  &__wrap
+
+  &__topline
+    @extend %fc
+    gap: 50px
+
+  &__topline-button
+    @extend %up
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+    color: #a2a2a2
+    @extend %700
+    padding-top: 45px
+    padding-bottom: 15px
+    border-bottom: 5px solid transparent
+
+    &.active
+      color: $black
+      border-bottom: 5px solid black
+
+
+  &__main
+    background-image: url("../../images/login/1.jpg")
+    background-size: cover
+    min-height: 640px
+    @media screen and (max-width: 1023px)
+      background-image: url("../../images/login/2.jpg")
+      min-height: 540px
+    
+    	
+    
+
+
+  &__title
+    color: $white
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+    padding-top: 45px
+    padding-bottom: 30px
+    text-align: center
+
+
+  &__form
+    max-width: 540px
+    margin: 0 auto 100px
+    background-color: $white
+    padding: 40px 30px
+    @media screen and (max-width: 1023px)
+    	padding: 20px
+    
+    	
+    
+
+    .input
+      background-color: #f6f6f6
+      border: 1px solid #ececec
+      margin-bottom: 20px
+      @media screen and (max-width: 1023px)
+      	height: 35px
+      
+      	
+      
+
+    .btn
+      height: 58px
+      @extend %up
+      width: 100%
+      font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+      @extend %700
+      @media screen and (max-width: 1023px)
+      	height: 43px
+      
+      	
+      
+
+    label
+      margin-bottom: 30px
+      display: block
+
+
+
+
+  &__subtitle
+    margin-bottom: 15px
+    
+    
+    
+  &__forgot
+    @extend %fc
+    border-top: 1px solid #ececec
+    padding-top: 20px
+    margin-top: 20px
+    a
+      font-size: 12px
+      text-decoration: underline
+      @extend %700
+
+
+
+

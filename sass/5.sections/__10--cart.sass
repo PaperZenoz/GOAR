@@ -1,0 +1,164 @@
+.basket
+  &__head
+    height: 100px
+    background-color: #ececec
+    @extend %fb
+    padding: 0 35px
+    align-items: center
+
+    .h1
+      margin-bottom: 0
+
+
+  &__clear
+    display: flex
+    align-items: center
+    gap: 5px
+
+    span
+      @media screen and (max-width: 1023px)
+        display: none
+
+
+  &__topline
+    display: grid
+    grid-template-columns: 450fr 340fr 210fr 320fr 50fr
+    border: 1.2px solid #ececec
+    padding: 25px 0
+    text-align: center
+    @media screen and (max-width: 1365px)
+      display: none
+
+  &__list
+    margin-bottom: 40px
+
+  &__item
+    display: grid
+    grid-template-columns: 450fr 340fr 210fr 320fr 50fr
+    padding: 35px
+    border: 1.2px solid #ececec
+    position: relative
+    margin-bottom: 5px
+    @media screen and (max-width: 1365px)
+      grid-template-columns: 1fr 1fr
+
+    @media screen and (max-width: 1023px)
+      grid-template-columns: 1fr
+      padding: 20px
+
+
+  &__img
+    width: 100px
+    height: 100px
+    border: 1.2px solid #ececec
+    margin-right: 25px
+    @media screen and (max-width: 1023px)
+      width: 75px
+      height: 75px
+
+
+  &__color
+    width: 31px
+    height: 31px
+    margin-top: 15px
+
+
+  &__col
+    border-right: 1px solid #ececec
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+    position: relative
+
+    &:last-child
+      border-right: 1px solid transparent
+
+
+    @media screen and (max-width: 1365px)
+      padding: 45px 0 25px
+      &:nth-child(3)
+        border-right: 1px solid transparent
+
+    @media screen and (max-width: 1023px)
+      border-bottom: 1px solid #ececec
+      border-right: 1px solid transparent
+
+
+  &__col-title
+    position: absolute
+    left: 50%
+    top: 15px
+    translate: -50%
+    font-size: 12px
+    display: none
+    @media screen and (max-width: 1365px)
+      display: block
+
+
+  &__title
+    strong
+      @extend %up
+      display: block
+      margin-top: 10px
+
+    span
+      font-size: clamp(0.75rem, calc(0.69rem + 0.3vw), 1rem)
+
+
+  &__price
+    span
+      text-decoration: line-through
+      color: #a2a2a2
+
+
+  &__close
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    width: 50px
+    background-color: #ececec
+    @extend %fc
+
+    @media screen and (max-width: 1365px)
+      left: 0
+      top: auto
+      width: 100%
+      height: 35px
+
+
+  &__promo
+    display: flex
+    justify-content: space-between
+    gap: 30px
+    @media screen and (max-width: 1365px)
+      flex-direction: column
+      gap: 20px
+
+    .input
+      border: 1.2px solid #ececec
+      max-width: 380px
+      height: 58px
+      @media screen and (max-width: 1365px)
+        max-width: 100%
+        height: 45px
+
+    .btn
+      height: 58px
+      max-width: 370px
+      width: 100%
+      @media screen and (max-width: 1365px)
+        max-width: 100%
+        height: 45px
+
+
+  &__promo-title
+    font-size: clamp(0.75rem, calc(0.69rem + 0.3vw), 1rem)
+    
+
+
+
+
+
+
