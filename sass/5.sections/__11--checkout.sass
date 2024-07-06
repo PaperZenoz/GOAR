@@ -1,0 +1,50 @@
+.checkout
+  &__block
+    border: 1.2px solid #ececec
+    padding: 30px
+    margin-bottom: 30px
+
+    .input
+      height: 47px
+      border: 1.2px solid #ececec
+      background-color: #f6f6f6
+      margin-bottom: 15px
+
+    .textarea
+      height: 71px
+      width: 100%
+      border: 1.2px solid #ececec
+      background-color: #f6f6f6
+
+  &__title
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+    @extend %700
+    margin-bottom: 20px
+
+  &__subtitle
+    font-size: clamp(0.75rem, calc(0.69rem + 0.3vw), 1rem)
+    margin-bottom: 20px
+
+    sub
+      color: $red
+
+  &__buttons
+    display: flex
+    gap: 15px
+    margin-bottom: 15px
+
+  &__btn
+    height: 47px
+
+  &__sign
+    font-size: 12px
+    color: #888888
+
+  &__row
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 40px
+
+
+  &__item
+    margin-bottom: 30px

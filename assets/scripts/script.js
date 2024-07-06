@@ -87,8 +87,20 @@ $(document).ready(function () {
         })
     }
 
+
+    function orders() {
+        var $head = $('.orders__head')
+
+        $head.on('click', function () {
+            $(this).parents('.orders__item').toggleClass('open')
+            $(this).toggleClass('open')
+            $(this).siblings('.orders__body').slideToggle()
+        })
+    }
+
     counter()
     review()
     burger()
     // more_text()
+    orders()
 })

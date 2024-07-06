@@ -1,0 +1,153 @@
+{% set page = { title: 'Оформление заказа' } %}
+{% extends "./2.parts/main.njk" %}
+{% block content %}
+    {% set  bread = [
+        'Главная',
+        'Корзина'] %}
+
+
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb__wrap">
+                {% for item in bread %}
+                    <a href="#" class="breadcrumb__link">{{ item }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+
+    {% set  _ = 'checkout' %}
+    <div class="{{ _ }} section">
+        <div class="container">
+            <h1 class="h1">Оформление заказа</h1>
+            <div class="{{ _ }}__wrap">
+                <div class="{{ _ }}__main">
+                    <div class="{{ _ }}__block">
+                        <h2 class="{{ _ }}__title">Регион доставки</h2>
+                        <div class="{{ _ }}__subtitle">
+                            Местоположение <sub>*</sub>
+                        </div>
+                        {% set  list = [
+                            'Москва',
+                            'Санкт-Петербург',
+                            'Екатеринбург',
+                            'Казань'] %}
+
+
+                        <div class="{{ _ }}__buttons">
+                            {% for item in list %}
+                                <a href="#" class="{{ _ }}__btn btn btn--white">
+                                    {{ item }}
+                                </a>
+                            {% endfor %}
+                        </div>
+
+                        <input type="text" class="input input--search" placeholder="Введите название...">
+
+
+                        <div class="{{ _ }}__sign">
+                            Выберите свой город в списке. Если вы не нашли свой город, выберите "другое местоположение",
+                            а город впишите в поле "Город"
+                        </div>
+                    </div>
+                    <div class="{{ _ }}__block">
+                        <h2 class="{{ _ }}__title">Личная информация</h2>
+                        <div class="{{ _ }}__row">
+                            <div class="{{ _ }}__item">
+                                <div class="{{ _ }}__subtitle">
+                                    Ф.И.О. <sub>*</sub>
+                                </div>
+                                <input type="text" class="input">
+                            </div>
+                            <div class="{{ _ }}__item">
+                                <div class="{{ _ }}__subtitle">
+                                    Телефон <sub>*</sub>
+                                </div>
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+                        <div class="{{ _ }}__row">
+                            <div class="{{ _ }}__item">
+                                <div class="{{ _ }}__subtitle">
+                                    E-Mail <sub>*</sub>
+                                </div>
+                                <input type="text" class="input">
+                            </div>
+                            <div class="{{ _ }}__item">
+                                <div class="{{ _ }}__subtitle">
+                                    Дата доставки <sub>*</sub>
+                                </div>
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                Адрес доставки <sub>*</sub>
+                            </div>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="{{ _ }}__row">
+                            <div class="{{ _ }}__item">
+                                <div class="{{ _ }}__subtitle">
+                                    Индекс
+                                </div>
+                                <input type="text" class="input">
+                            </div>
+                            <div class="{{ _ }}__item">
+                                <div class="{{ _ }}__subtitle">
+                                    Город
+                                </div>
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                Комментарии к заказу:
+                            </div>
+                            <textarea class="textarea"></textarea>
+
+                        </div>
+                        <div class="{{ _ }}__row">
+                            <div class="{{ _ }}__block">
+                                <h2 class="{{ _ }}__title">
+                                    Доставка
+                                </h2>
+
+                            </div>
+                            <div class="{{ _ }}__block">
+                                <h2 class="{{ _ }}__title">
+                                    Оплата
+                                </h2>
+                                <div class="{{ _ }}__item">
+                                    <div class="{{ _ }}__subtitle">
+                                        Номер карты
+                                    </div>
+                                    <input type="text" class="input" placeholder="1234 5678 1234 5678">
+                                </div>
+                                <div class="{{_}}__row">
+                                    <div class="{{ _ }}__item">
+                                        <div class="{{ _ }}__subtitle">
+                                            Месяц / год
+                                        </div>
+                                        <input type="text" class="input" placeholder="ММ / ГГ">
+                                    </div>
+                                    <div class="{{ _ }}__item">
+                                        <div class="{{ _ }}__subtitle">
+                                            CVV / CVC
+                                        </div>
+                                        <input type="text" class="input" placeholder="123">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}

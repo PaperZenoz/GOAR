@@ -1,0 +1,104 @@
+.profile
+  &__wrap
+
+  &__subtitle
+    font-size: clamp(0.75rem, calc(0.69rem + 0.3vw), 1rem)
+    margin-bottom: 20px
+
+
+  &__topline
+    @extend %fc
+    gap: 50px
+    border-bottom: 1.2px solid #ebd7ff
+    margin-bottom: 60px
+
+  &__topline-button
+    @extend %up
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+    color: #a2a2a2
+    @extend %700
+    padding-top: 45px
+    padding-bottom: 15px
+    border-bottom: 5px solid transparent
+
+    &.active
+      color: $black
+      border-bottom: 5px solid black
+
+  &__block
+    border: 1.2px solid #ececec
+    padding: 30px
+    max-width: 540px
+    margin: 0 auto 45px
+    @extend %lc
+    position: relative
+
+    .input
+      height: 47px
+      border: 1.2px solid #ececec
+      background-color: #f6f6f6
+      margin-bottom: 15px
+      @media screen and (max-width: 1919px)
+        height: 35px
+
+
+    .textarea
+      height: 71px
+      width: 100%
+      border: 1.2px solid #ececec
+      background-color: #f6f6f6
+
+    .h2
+      @extend %fy
+      font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+
+  &__option
+    display: flex
+    gap: 15px
+    padding-bottom: 30px
+    border-bottom: 1.2px solid #ececec
+    margin-bottom: 30px
+
+    a
+      @extend %700
+      text-decoration: underline
+
+  &__add
+    display: flex
+    align-items: center
+    gap: 25px
+
+    strong
+      font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+
+  &__add-button
+    width: 43px
+    height: 43px
+    background-color: $main-color
+    @extend %fc
+    font-size: 30px
+    @extend %700
+    @media screen and (max-width: 1919px)
+      width: 32px
+      height: 32px
+
+  &__icon
+    width: 27px
+    height: 27px
+    margin-right: 12px
+    @media screen and (max-width: 1919px)
+      width: 21px
+      height: 21px
+
+
+  &__checked
+    width: 27px
+    height: 27px
+    position: absolute
+    right: 30px
+    top: 110px
+    @media screen and (max-width: 1919px)
+      width: 21px
+      height: 21px
+
+

@@ -1,0 +1,130 @@
+.orders
+  &__wrap
+
+  &__item
+
+    margin-bottom: 30px
+    background-color: $white
+
+    &.open
+      box-shadow: 2px 9px 34px 0px rgba(66, 66, 66, 0.15)
+
+  &__head
+    @extend %fb
+    position: relative
+    border: 1.2px solid #ececec
+    padding: 30px 80px 30px 30px
+    @media screen and (max-width: 1023px)
+      flex-direction: column
+      gap: 20px
+
+    &:before
+      content: ''
+      width: 18px
+      height: 30px
+      background-image: url("../../images/orders/3.png")
+      background-size: contain
+      position: absolute
+      right: 30px
+      rotate: 0deg
+      @extend %transition
+      @media screen and (max-width: 1023px)
+        width: 14px
+        height: 22px
+
+
+    &.open:before
+      rotate: 90deg
+
+  &__title
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+    @extend %700
+
+  &__info
+    @extend %fy
+    gap: 30px
+    @media screen and (max-width: 1023px)
+    	gap: 15px
+    
+    	
+    
+
+  &__icon
+    width: 30px
+    height: 30px
+
+
+  &__body
+    display: grid
+    grid-template-columns: 45fr 31fr 58fr
+    padding: 30px
+    @media screen and (max-width: 1023px)
+      grid-template-columns: 1fr
+      padding: 20px
+
+
+  &__img
+    width: 100px
+    height: 100px
+    border: 1.2px solid #ececec
+    margin-right: 25px
+    @media screen and (max-width: 1023px)
+      width: 75px
+      height: 75px
+
+
+  &__text-subtitle
+    @extend %up
+    @extend %700
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+    margin-bottom: 15px
+
+  &__text-title
+    margin-bottom: 10px
+
+
+  &__color
+    width: 30px
+    height: 30px
+
+
+  &__product
+    display: flex
+  //gap: 25px
+
+
+  &__col
+    border-right: 1.2px solid #ececec
+    @extend %fc
+    @media screen and (max-width: 1023px)
+      border-right: 1px solid $transparent
+      border-bottom: 1px solid #ececec
+      padding: 30px 0
+      justify-content: flex-start
+
+    &:last-child
+      border-right: 1px solid $transparent
+
+    &:nth-child(2)
+      @extend %fc
+
+
+  &__price
+    display: flex
+    gap: 10px
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+
+    strong
+
+    span
+      text-decoration: line-through
+      color: #a2a2a2
+
+
+  &__info.done
+    span
+      color: #25ae60
+
+
+
+

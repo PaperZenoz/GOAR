@@ -1,0 +1,99 @@
+{% set page = { title: 'Регистрация' } %}
+{% extends "./2.parts/main.njk" %}
+{% block content %}
+
+    {% set  _ = 'login' %}
+    <div class="{{ _ }}">
+        <div class="{{ _ }}__topline">
+            <a href="#" class="{{ _ }}__topline-button ">
+                Авторизация
+            </a>
+            <a href="#" class="{{ _ }}__topline-button active">
+                Регистрация
+            </a>
+
+        </div>
+        <div class="{{ _ }}__register">
+            <div class="container">
+                <form action="#" class="{{ _ }}__form">
+                    <div class="{{ _ }}__row">
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                Имя
+                            </div>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                Фамилия
+                            </div>
+                            <input type="text" class="input">
+                        </div>
+
+                    </div>
+                    <div class="{{ _ }}__row">
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                Логин (минимум 3 символа) <sub>*</sub>
+                            </div>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                E-Mail <sub>*</sub>
+                            </div>
+                            <input type="text" class="input">
+                        </div>
+                    </div>
+
+
+                    <div class="{{ _ }}__row">
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                Пароль <sub>*</sub>
+                            </div>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                Подтверждение пароля <sub>*</sub>
+                            </div>
+                            <input type="text" class="input">
+                        </div>
+                    </div>
+
+
+                    <div class="{{ _ }}__row">
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                Введите слово на картинке <sub>*</sub>
+                            </div>
+                            <div class="{{ _ }}__capcha img img--contain">
+                                <img src="images/{{ _ }}/5.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="{{ _ }}__item">
+                            <div class="{{ _ }}__subtitle">
+                                &nbsp
+                            </div>
+                            <input type="text" class="input">
+                        </div>
+                    </div>
+
+
+
+                    <div class="gap"></div>
+                    <button class="btn">ЗАРегистрИРОВАТЬСЯ</button>
+
+
+                    <div class="{{ _ }}__sign">
+                        Пароль должен быть не менее 0 символов длиной.
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

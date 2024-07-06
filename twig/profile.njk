@@ -1,0 +1,76 @@
+{% set page = { title: 'Профиль' } %}
+{% extends "./2.parts/main.njk" %}
+{% block content %}
+    {% set  _ = 'profile' %}
+    <div class="{{ _ }}">
+        <div class="container">
+            <div class="{{ _ }}__topline">
+                <a href="#" class="{{ _ }}__topline-button active">
+                    Профиль
+                </a>
+                <a href="#" class="{{ _ }}__topline-button">
+                    Заказы
+                </a>
+
+            </div>
+            <div class="{{ _ }}__block">
+                <h2 class="h2">
+                    <div class="{{ _ }}__icon img img--contain">
+                        <img src="images/{{ _ }}/1.png" alt=""/>
+                    </div>
+
+                    Личная информация
+                </h2>
+                <div class="{{ _ }}__item">
+                    <div class="{{ _ }}__subtitle">
+                        Ф.И.О.
+                    </div>
+                    <input type="text" class="input">
+                </div>
+                <div class="{{ _ }}__item">
+                    <div class="{{ _ }}__subtitle">
+                        Телефон
+                    </div>
+                    <input type="text" class="input">
+                </div>
+                <div class="{{ _ }}__item">
+                    <div class="{{ _ }}__subtitle">
+                        E-Mail <sub>*</sub>
+                    </div>
+                    <input type="text" class="input">
+                </div>
+
+
+            </div>
+            <div class="{{ _ }}__block">
+                <h2 class="h2"><div class="{{ _ }}__icon img img--contain"><img src="images/{{ _ }}/2.png" alt=""/></div>Мои адреса</h2>
+                <div class="{{_}}__checked img img--contain">
+                <img src="images/{{ _ }}/3.png" alt=""/>
+                </div>
+                <strong>Виктория Иванова</strong>
+                <div class="gap"></div>
+                <span>+7 812 901 27 17</span>
+                <div class="gap"></div>
+                <span>Россия, Москва, Москва, ул Гончарова, д 3, кв 55</span> <br>
+                <div class="gap"></div>
+                <div class="{{ _ }}__option">
+                    <a href="#">Изменить</a>
+                    <a href="#">Удалить</a>
+                </div>
+                <a href="#" class="{{ _ }}__add">
+                    <div class="{{ _ }}__add-button">
+                        +
+                    </div>
+                    <strong>
+                        Добавить адрес
+                    </strong>
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock content %}

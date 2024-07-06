@@ -1,0 +1,201 @@
+{% set page = { title: 'Заказы' } %}
+{% extends "./2.parts/main.njk" %}
+{% block content %}
+    {% set  _ = 'profile' %}
+    <div class="{{ _ }}">
+        <div class="container">
+            <div class="{{ _ }}__topline">
+                <a href="#" class="{{ _ }}__topline-button">
+                    Профиль
+                </a>
+                <a href="#" class="{{ _ }}__topline-button active">
+                    Заказы
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    {% set  _ = 'orders' %}
+    <div class="{{ _ }} section section--no-top">
+        <div class="container">
+            <div class="{{ _ }}__wrap">
+                <div class="{{ _ }}__item open">
+                    <div class="{{ _ }}__head open">
+                        <div class="{{ _ }}__title">
+                            Заказ №20578181
+                        </div>
+                        <div class="{{ _ }}__info">
+                            <div class="{{ _ }}__icon img img--contain">
+                                <img src="images/{{ _ }}/1.png" alt=""/>
+                            </div>
+                            <span>
+                                    Заказ в пути
+                                </span>
+
+                        </div>
+
+                    </div>
+                    <div class="{{ _ }}__body">
+                        
+                        <div class="{{_}}__col">
+                            <div class="{{ _ }}__product">
+                                <div class="{{ _ }}__img img img--contain">
+                                    <img src="images/{{ _ }}/1.jpg" alt=""/>
+                                </div>
+                                <div class="{{_}}__text">
+                                    <div class="{{_}}__text-title">
+                                        Карандаш для глаз
+                                    </div>
+                                    <div class="{{_}}__text-subtitle">
+                                        Green light
+                                    </div>
+                                    <div class="{{_}}__color">
+                                        <img src="images/{{ _ }}/1.jpg" alt=""/>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="{{_}}__col">
+                        <div class="{{_}}__price">
+                            <strong>1090₽ </strong>
+                            <span>1990 ₽</span>
+                        </div>
+                        </div>
+                        <div class="{{_}}__col">
+                            <div class="{{_}}__client">
+                                <strong>Виктория Иванова</strong> <br>
+                                <span>+7 812 901 27 17</span> <br>
+                                <span>Россия, Москва, Москва, ул Гончарова, д 3, кв 55</span>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+
+                </div>
+                <div class="{{ _ }}__item open">
+                    <div class="{{ _ }}__head open">
+                        <div class="{{ _ }}__title">
+                            Заказ №20578181
+                        </div>
+                        <div class="{{ _ }}__info done">
+                            <div class="{{ _ }}__icon img img--contain">
+                                <img src="images/{{ _ }}/2.png" alt=""/>
+                            </div>
+                            <span>
+                                    Заказ доставлен
+                                </span>
+
+                        </div>
+
+                    </div>
+                    <div class="{{ _ }}__body">
+
+                        <div class="{{_}}__col">
+                            <div class="{{ _ }}__product">
+                                <div class="{{ _ }}__img img img--contain">
+                                    <img src="images/{{ _ }}/1.jpg" alt=""/>
+                                </div>
+                                <div class="{{_}}__text">
+                                    <div class="{{_}}__text-title">
+                                        Карандаш для глаз
+                                    </div>
+                                    <div class="{{_}}__text-subtitle">
+                                        Green light
+                                    </div>
+                                    <div class="{{_}}__color">
+                                        <img src="images/{{ _ }}/1.jpg" alt=""/>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="{{_}}__col">
+                            <div class="{{_}}__price">
+                                <strong>1090₽ </strong>
+                                <span>1990 ₽</span>
+                            </div>
+                        </div>
+                        <div class="{{_}}__col">
+                            <div class="{{_}}__client">
+                                <strong>Виктория Иванова</strong> <br>
+                                <span>+7 812 901 27 17</span> <br>
+                                <span>Россия, Москва, Москва, ул Гончарова, д 3, кв 55</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="{{ _ }}__item">
+                    <div class="{{ _ }}__head">
+                        <div class="{{ _ }}__title">
+                            Заказ №20578181
+                        </div>
+                        <div class="{{ _ }}__info done">
+                            <div class="{{ _ }}__icon img img--contain">
+                                <img src="images/{{ _ }}/2.png" alt=""/>
+                            </div>
+                            <span>
+                                    Заказ доставлен
+                                </span>
+
+                        </div>
+
+                    </div>
+                    <div class="{{ _ }}__body" style="display: none">
+
+                        <div class="{{_}}__col">
+                            <div class="{{ _ }}__product">
+                                <div class="{{ _ }}__img img img--contain">
+                                    <img src="images/{{ _ }}/1.jpg" alt=""/>
+                                </div>
+                                <div class="{{_}}__text">
+                                    <div class="{{_}}__text-title">
+                                        Карандаш для глаз
+                                    </div>
+                                    <div class="{{_}}__text-subtitle">
+                                        Green light
+                                    </div>
+                                    <div class="{{_}}__color">
+                                        <img src="images/{{ _ }}/1.jpg" alt=""/>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="{{_}}__col">
+                            <div class="{{_}}__price">
+                                <strong>1090₽ </strong>
+                                <span>1990 ₽</span>
+                            </div>
+                        </div>
+                        <div class="{{_}}__col">
+                            <div class="{{_}}__client">
+                                <strong>Виктория Иванова</strong> <br>
+                                <span>+7 812 901 27 17</span> <br>
+                                <span>Россия, Москва, Москва, ул Гончарова, д 3, кв 55</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
