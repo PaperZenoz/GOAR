@@ -48,3 +48,62 @@
 
   &__item
     margin-bottom: 30px
+
+
+  &__wrap
+    display: grid
+    grid-template-columns: auto 310px
+    grid-gap: 30px
+    position: relative
+
+
+  &__sidebar
+
+    height: max-content
+    position: sticky
+    top: 0
+
+    .btn
+      height: 57px
+      width: 100%
+      font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+      margin-bottom: 20px
+    
+    
+  &__sidebar-wrap
+    border: 1.2px solid #ececec
+    margin-bottom: 20px
+      
+
+
+  &__info
+    padding: 35px
+    span
+      text-decoration: line-through
+      color: #a2a2a2
+
+
+  &__info-row
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 40px
+    margin-bottom: 20px
+    @extend %lc
+
+
+  &__price
+    padding: 20px 35px
+    background-color: #ececec
+
+
+  &__price-row
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 40px
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+
+
+  &__checkbox-label
+    font-size: 14px
+    color: #191919
+
