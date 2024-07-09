@@ -2,7 +2,7 @@
   background-image: url("../../images/general-banner/1.jpg")
   background-size: cover
   background-position: center
-  @media screen and (max-width: 1023px)
+  @media screen and (max-width: 767px)
     background-image: url("../../images/general-banner/2.jpg")
     aspect-ratio: 320 / 538
 
@@ -10,8 +10,8 @@
     text-align: center
     @extend %fc
     flex-direction: column
-    height: 840px
-    @media screen and (max-width: 1023px)
+    height: 43.750vw
+    @media screen and (max-width: 767px)
     	height: auto
     
     	
@@ -20,7 +20,7 @@
     .h1
       font-size: clamp(1.563rem, calc(1.336rem + 1.13vw), 2.5rem)
       @extend %up
-      margin: 220px 0px
+      margin: 11.458vw 0px
       @media screen and (max-width: 1023px)
       	margin: 15px 0px 15px
       
@@ -35,7 +35,7 @@
 .general-products
   display: grid
   grid-template-columns: repeat(3, 1fr)
-  @media screen and (max-width: 1023px)
+  @media screen and (max-width: 767px)
     grid-template-columns: 1fr
 
 
@@ -81,12 +81,13 @@
 
   &__img
     margin-bottom: 40px
+    display: block
 
   &__wrap
     display: grid
     grid-template-columns: repeat(6, 1fr)
     grid-gap: 30px
-    @media screen and (max-width: 1919px)
+    @media screen and (max-width: 1599px)
       grid-template-columns: repeat(3, 1fr)
     @media screen and (max-width: 1023px)
       grid-template-columns: repeat(2, 1fr)
@@ -233,10 +234,11 @@
     grid-gap: 85px
     position: relative
     @media screen and (max-width: 1365px)
-      grid-template-columns: 1fr
+      grid-template-columns: 480px auto
       grid-gap: 30px
     @media screen and (max-width: 1023px)
-    	padding-top: 80px
+      grid-template-columns: 1fr
+      padding-top: 80px
     
     	
     

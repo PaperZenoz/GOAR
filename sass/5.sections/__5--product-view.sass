@@ -7,14 +7,22 @@
     grid-template-columns: repeat(2, 1fr)
     gap: 30px
     margin-bottom: 100px
-    @media screen and (max-width: 1366px)
+
+    	
+    
+    	
+    
+    @media screen and (max-width: 1023px)
       grid-template-columns: 1fr
 
   &__slider
     display: flex
     gap: 30px
+    @media screen and (max-width: 1365px)
+      zoom: 0.5
     @media screen and (max-width: 1023px)
       flex-direction: column-reverse
+      zoom: 1
 
   &__slider-core
     width: 500px
@@ -331,7 +339,7 @@
     @include py(130px, 100px, 80px, 60px, 30px)
     border-bottom: 2px solid $main-color
     display: grid
-    @include g(5, 4, 3, 1, 1)
+    @include g(5, 5, 4, 3, 1)
     grid-gap: 30px
     @media screen and (max-width: 1023px)
       grid-gap: 60px

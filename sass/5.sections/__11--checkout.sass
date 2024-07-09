@@ -9,6 +9,8 @@
       border: 1.2px solid #ececec
       background-color: #f6f6f6
       margin-bottom: 15px
+      @media screen and (max-width: 1023px)
+        margin-bottom: 0
 
     .textarea
       height: 71px
@@ -32,6 +34,7 @@
     display: flex
     gap: 15px
     margin-bottom: 15px
+    flex-wrap: wrap
 
   &__btn
     height: 47px
@@ -44,10 +47,14 @@
     display: grid
     grid-template-columns: repeat(2, 1fr)
     grid-gap: 40px
+    @media screen and (max-width: 1023px)
+      grid-gap: 20px
+      grid-template-columns: 1fr
 
 
   &__item
     margin-bottom: 30px
+
 
 
   &__wrap
@@ -55,29 +62,34 @@
     grid-template-columns: auto 310px
     grid-gap: 30px
     position: relative
-
+    @media screen and (max-width: 1023px)
+      display: flex
+      flex-direction: column-reverse
 
   &__sidebar
 
     height: max-content
     position: sticky
     top: 0
+    @media screen and (max-width: 1023px)
+      position: relative
+
 
     .btn
       height: 57px
       width: 100%
       font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
       margin-bottom: 20px
-    
-    
+
+
   &__sidebar-wrap
     border: 1.2px solid #ececec
     margin-bottom: 20px
-      
 
 
   &__info
     padding: 35px
+
     span
       text-decoration: line-through
       color: #a2a2a2

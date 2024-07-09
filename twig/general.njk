@@ -59,13 +59,13 @@
 
                 {% for item in list %}
                     <div class="{{ _ }}__item">
-                        <div class="{{ _ }}__img">
+                        <a href="#" class="{{ _ }}__img">
                             <img src="images/{{ _ }}/{{ loop.index }}.png" alt=""/>
-                        </div>
-                        <div class="{{ _ }}__title">
+                        </a>
+                        <a href="#" class="{{ _ }}__title">
                             <span>{{ item.title }}</span>
                             <strong>{{ item.subtitle }}</strong>
-                        </div>
+                        </a>
 
                         <div class="{{ _ }}__price">
                             <strong>1090₽ </strong>

@@ -1,572 +1,575 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>Каталог</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    <link rel="icon" sizes="192x192" href="https://goar.elmark.pro/image/favicon.png">
-    <link rel="shortcut icon" href="https://goar.elmark.pro/image/favicon.png" type="image/png"/>
-    <link rel="apple-touch-icon" href="https://goar.elmark.pro/image/favicon.png" type="image/png"/>
+<link rel="stylesheet" href="assets/css/style.css">
 
-    <title>GOAR_home_makeup_white2 + mobile</title>
-    <meta name="description" content="Верстка сайта Goar"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link href="https://goar.elmark.pro/style.css" rel="stylesheet" type="text/css">
-    <link href="https://goar.elmark.pro/responsive.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap"
-          rel="stylesheet">
 
-    <link rel="stylesheet" href="https://goar.elmark.pro/js/fm.revealator.jquery.css">
-    <script src="https://goar.elmark.pro/js/jquery-1.11.3.min.js"></script>
-    <script src="https://goar.elmark.pro/js/fm.revealator.jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+
+
+
+
+
+
+<script src="assets/scripts/script.js"></script>
 </head>
 <body>
 
-<div id="header">
-    <div class="content">
-        <div class="content-wrapper">
-            <div class="container">
-                <div class="grid">
-                    <div class="logo">
-                        <a href="/">
-                            <img src="https://goar.elmark.pro/image/logo_goar.png.webp">
-                        </a>
-                    </div>
 
-                    <div id="sidenav" class="sidenav">
-                        <a href="/" class="sidenav-logo-white"><img
-                                    src="https://goar.elmark.pro/image/logo_goar_white.png"></a>
 
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="header">
+    <div class="container">
+        <div class="header__wrap">
+            <div class="header__burger">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="35px" height="28px"  viewBox="0 0 35 28">
+                    <path fill-rule="evenodd"  fill="#000000"
+                          d="M1.0,1.0001068 C1.0,1.0001068 34.000023,1.0001068 34.000023,1.0001068 C34.000023,1.0001068 34.000023,6.9998703 34.000023,6.9998703 C34.000023,6.9998703 1.0,6.9998703 1.0,6.9998703 C1.0,6.9998703 1.0,1.0001068 1.0,1.0001068 ZM1.0,10.999962 C1.0,10.999962 34.000023,10.999962 34.000023,10.999962 C34.000023,10.999962 34.000023,16.999725 34.000023,16.999725 C34.000023,16.999725 1.0,16.999725 1.0,16.999725 C1.0,16.999725 1.0,10.999962 1.0,10.999962 ZM1.0,20.999817 C1.0,20.999817 34.000023,20.999817 34.000023,20.999817 C34.000023,20.999817 34.000023,27.00032 34.000023,27.00032 C34.000023,27.00032 1.0,27.00032 1.0,27.00032 C1.0,27.00032 1.0,20.999817 1.0,20.999817 Z"/>
+                </svg>
+            </div>
+            <a href="index.html" class="header__logo">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="107px" height="27px" viewBox="0 0 214 53">
+                    <path fill-rule="evenodd" fill="#000000"
+                          d="M51.103394,29.433304 C50.192047,29.730965 49.532684,30.195091 49.125183,30.830978 C48.80484,31.33194 48.621338,32.102745 48.577057,33.147354 C48.532593,34.193283 48.510284,35.237892 48.510284,36.282234 C48.510284,36.282234 48.510284,46.230537 48.510284,46.230537 C48.19168,46.50435 47.40631,46.95919 46.154236,47.59481 C44.90213,48.230957 43.375885,48.87745 41.5791,49.53586 C39.78061,50.19374 37.78952,50.752228 35.60376,51.204956 C33.41815,51.657677 31.234283,51.887222 29.050568,51.887222 C24.723663,51.887222 20.85614,51.330856 17.440613,50.21627 C14.028839,49.10328 11.14679,47.46917 8.803619,45.309982 C6.45874,43.15503 4.660248,40.518982 3.409851,37.406364 C2.1558838,34.295067 1.5317078,30.806854 1.5317078,26.947289 C1.5317078,25.812294 1.6446533,24.505806 1.8743286,23.02835 C2.1004333,21.553543 2.4986877,19.996834 3.0672302,18.35955 C3.6376343,16.725182 4.434143,15.067215 5.4584656,13.386726 C6.4827576,11.704643 7.768158,10.1147995 9.316711,8.616142 C11.502319,6.4808044 14.186249,4.765587 17.373993,3.4715538 C20.559845,2.1775246 24.427399,1.5307732 28.980194,1.5307732 C31.712189,1.5307732 34.125732,1.7672081 36.21881,2.24432 C38.31189,2.7211647 40.077057,3.246254 41.51062,3.8116302 C42.944336,4.380718 44.04828,4.902359 44.82248,5.379204 C45.594788,5.8560524 46.02823,6.0948715 46.12091,6.0948715 C46.20984,6.0948715 46.46167,5.822918 46.871094,5.277687 C47.280334,4.732189 47.78055,4.0740395 48.37329,3.301384 C48.37329,3.301384 48.98819,3.301384 48.98819,3.301384 C48.98819,3.301384 48.98819,18.155716 48.98819,18.155716 C48.98819,18.155716 48.169525,18.155716 48.169525,18.155716 C47.66571,16.111557 46.915527,14.181641 45.915283,12.362526 C44.91327,10.547646 43.84262,9.048721 42.705383,7.8668137 C41.24951,6.322029 39.382355,5.072262 37.10785,4.118572 C34.82956,3.1646118 32.280884,2.687767 29.4581,2.687767 C26.453674,2.687767 23.745728,3.358902 21.334045,4.6987915 C18.920654,6.0370865 16.87207,7.8320847 15.188416,10.081665 C13.502869,12.3296585 12.206299,14.9190445 11.294952,17.849037 C10.385498,20.780624 9.93161,23.8564 9.93161,27.083794 C9.93161,30.62555 10.36145,33.86434 11.22818,36.792213 C12.091461,39.724068 13.343567,42.2342 14.98465,44.32315 C16.621948,46.411575 18.626099,48.036667 20.993286,49.19552 C23.358612,50.353043 26.068481,50.933266 29.117188,50.933266 C31.302948,50.933266 33.340393,50.55767 35.229706,49.809135 C37.117126,49.058746 38.608154,47.84291 39.70096,46.16268 C40.064026,45.572655 40.338165,44.52646 40.519775,43.028854 C40.701233,41.528076 40.793762,39.986473 40.793762,38.393456 C40.793762,36.805466 40.71411,35.372543 40.554962,34.101044 C40.3938,32.82901 39.928925,31.784935 39.156433,30.96563 C38.108124,29.78637 36.263275,29.08236 33.6257,28.854942 C33.6257,28.854942 33.6257,28.172935 33.6257,28.172935 C33.6257,28.172935 53.629913,28.172935 53.629913,28.172935 C53.629913,28.172935 53.629913,28.854942 53.629913,28.854942 C52.855713,28.947449 52.01474,29.139618 51.103394,29.433304 ZM107.09314,36.759087 C105.72998,39.8497 103.87399,42.530006 101.52908,44.799736 C99.18402,47.07158 96.45392,48.820457 93.334656,50.045837 C90.217285,51.27334 86.90561,51.887222 83.40112,51.887222 C79.94113,51.887222 76.66446,51.28447 73.567505,50.081093 C70.47247,48.87745 67.76434,47.17363 65.44348,44.97017 C63.12088,42.76671 61.28705,40.13279 59.946014,37.066025 C58.60312,33.99926 57.930878,30.62555 57.930878,26.947289 C57.930878,23.039482 58.63846,19.53112 60.049683,16.418503 C61.45938,13.307205 63.359833,10.673286 65.7511,8.5143585 C68.14044,6.3570175 70.93921,4.6987915 74.14911,3.5399399 C77.3573,2.381092 80.73764,1.8024597 84.28827,1.8024597 C88.15582,1.8024597 91.62869,2.4844666 94.7016,3.845028 C97.772644,5.209034 100.38068,7.0390244 102.51822,9.331276 C104.65933,11.626976 106.29663,14.272293 107.43579,17.270676 C108.57321,20.268524 109.141754,23.401817 109.141754,26.674011 C109.141754,30.30774 108.46008,33.67032 107.09314,36.759087 ZM99.61746,18.35955 C98.90988,15.5438 97.84302,12.989128 96.409454,10.69529 C94.97574,8.401176 93.18652,6.5380554 91.04901,5.1056633 C88.90787,3.6751213 86.38135,2.9610443 83.469635,2.9610443 C80.509674,2.9610443 77.94986,3.6751213 75.78659,5.1056633 C73.62485,6.5380554 71.84866,8.388718 70.4613,10.660301 C69.07205,12.932144 68.04773,15.510933 67.3884,18.394272 C66.729034,21.27974 66.39929,24.1986 66.39929,27.150589 C66.39929,30.241478 66.76233,33.21547 67.492065,36.078934 C68.2182,38.940277 69.299835,41.461548 70.73355,43.643005 C72.16727,45.822342 73.96765,47.572548 76.12921,48.888847 C78.29077,50.206734 80.80612,50.864616 83.6734,50.864616 C86.54065,50.864616 89.033875,50.13861 91.15097,48.683685 C93.26807,47.23088 95.03137,45.35636 96.44278,43.062256 C97.85416,40.76841 98.90988,38.18962 99.61746,35.328545 C100.32318,32.466934 100.67697,29.605331 100.67697,26.741867 C100.67697,23.971436 100.32318,21.178215 99.61746,18.35955 ZM138.13141,51.54715 C138.13141,51.54715 138.13141,50.864616 138.13141,50.864616 C138.2684,50.864616 138.59818,50.818497 139.12054,50.727844 C139.64273,50.63746 140.19101,50.47895 140.75974,50.251 C141.32828,50.023575 141.82849,49.705765 142.26193,49.297302 C142.69348,48.888847 142.91013,48.36773 142.91013,47.72973 C142.91013,47.321266 142.7843,46.651985 142.53607,45.72056 C142.28409,44.78913 141.93219,43.65387 141.4766,42.311867 C141.02081,40.973305 140.49673,39.483917 139.90588,37.849815 C139.31314,36.213852 138.67593,34.511627 137.99426,32.738358 C137.99426,32.738358 119.831116,32.738358 119.831116,32.738358 C119.14963,34.467094 118.48822,36.112335 117.851166,37.67964 C117.21207,39.246956 116.57486,40.82566 115.939545,42.415237 C114.982025,44.86812 114.50412,46.595 114.50412,47.59481 C114.50412,48.184837 114.68558,48.674408 115.0524,49.058746 C115.41547,49.445206 115.8822,49.765137 116.45264,50.012703 C117.01947,50.26425 117.63437,50.44529 118.2937,50.55767 C118.95325,50.670853 119.579285,50.77423 120.17203,50.864616 C120.17203,50.864616 120.17203,51.54715 120.17203,51.54715 C120.17203,51.54715 105.628204,51.54715 105.628204,51.54715 C105.628204,51.54715 105.628204,50.79676 105.628204,50.79676 C106.81351,50.65999 107.82495,50.34191 108.66763,49.842537 C109.5105,49.34369 109.99939,49.00335 110.136536,48.820457 C110.45325,48.5045 110.977325,47.753586 111.70535,46.570877 C112.4332,45.39135 113.32239,43.643005 114.368835,41.324776 C115.324646,39.189964 116.39343,36.759087 117.57892,34.034775 C118.76047,31.307556 119.97925,28.50373 121.23154,25.616676 C122.48364,22.732536 123.72458,19.827194 124.95264,16.895348 C126.180695,13.965355 127.34198,11.227798 128.43478,8.684265 C128.43478,8.684265 127.7514,7.1853333 127.7514,7.1853333 C128.57007,6.820877 129.31094,6.392273 129.9703,5.889183 C130.62982,5.390072 131.2114,4.8689613 131.71146,4.3218727 C132.21152,3.7782326 132.63397,3.2571182 132.9747,2.756153 C133.31546,2.2554512 133.57861,1.8485832 133.76007,1.5307732 C133.76007,1.5307732 134.30646,1.5307732 134.30646,1.5307732 C135.71597,5.301277 137.06076,8.878288 138.33517,12.26313 C139.60944,15.645584 140.82822,18.90664 141.9878,22.041527 C143.14908,25.17482 144.27707,28.207924 145.36816,31.136063 C146.46094,34.067642 147.55374,36.962654 148.64465,39.82585 C149.14658,41.23439 149.61163,42.404106 150.04507,43.33606 C150.47852,44.267487 150.9674,45.322968 151.5138,46.50435 C151.60461,46.685387 151.80838,47.003197 152.12698,47.45804 C152.44559,47.912888 152.86786,48.3786 153.39023,48.855446 C153.9143,49.332558 154.56268,49.751884 155.33875,50.11635 C156.11105,50.47895 157.02051,50.68358 158.06903,50.727844 C158.06903,50.727844 158.06903,51.54715 158.06903,51.54715 C158.06903,51.54715 138.13141,51.54715 138.13141,51.54715 ZM129.18494,10.251305 C128.91269,10.8437195 128.51443,11.7751465 127.992065,13.04718 C127.466095,14.31868 126.8179,15.864258 126.04355,17.679398 C125.26935,19.497726 124.41739,21.553543 123.483734,23.845268 C122.55023,26.141502 121.53897,28.627518 120.44617,31.307556 C120.44617,31.307556 137.44788,31.307556 137.44788,31.307556 C136.67368,29.263664 135.8883,27.219238 135.0918,25.17482 C134.29529,23.130135 133.52301,21.165497 132.77094,19.279846 C132.01889,17.39605 131.3374,15.667847 130.72235,14.100273 C130.10745,12.534554 129.59625,11.251915 129.18494,10.251305 ZM198.51349,51.54715 C198.10217,51.136307 197.80591,50.829628 197.62427,50.626328 C197.44284,50.421165 197.23718,50.18261 197.0094,49.91092 C196.78159,49.639236 196.49817,49.24005 196.15726,48.718674 C195.8165,48.197296 195.27939,47.413513 194.55325,46.36731 C193.68637,45.09581 192.92334,43.947823 192.26398,42.925484 C191.60446,41.903137 190.93396,40.89219 190.25055,39.893967 C189.56702,38.895744 188.82611,37.882942 188.0315,36.862724 C187.23328,35.838524 186.29034,34.692657 185.19754,33.42063 C184.2862,32.374695 183.29535,31.398209 182.22849,30.489044 C181.15784,29.581474 180.03174,29.01371 178.84625,28.786552 C177.98312,28.605515 177.3219,28.514862 176.86801,28.514862 C176.45688,28.514862 175.93451,28.4926 175.2973,28.444359 C175.2973,31.398209 175.2973,33.96427 175.2973,36.145462 C175.2973,38.326393 175.31946,40.165924 175.36392,41.66485 C175.41028,43.119774 175.4566,44.367416 175.50107,45.41362 C175.54553,46.460083 175.79736,47.321266 176.25311,48.00142 C176.61603,48.5933 177.3219,49.19552 178.36835,49.809135 C179.41666,50.421165 180.87253,50.77423 182.73969,50.864616 C182.73969,50.864616 182.73969,51.54715 182.73969,51.54715 C182.73969,51.54715 160.89044,51.54715 160.89044,51.54715 C160.89044,51.54715 160.89044,50.864616 160.89044,50.864616 C162.0279,50.68358 163.12067,50.41189 164.16711,50.045837 C165.21356,49.68376 166.03241,49.138268 166.62515,48.411995 C166.85104,48.13845 167.0344,47.72973 167.17154,47.184235 C167.30664,46.641388 167.41049,46.027504 167.479,45.34523 C167.54749,44.66323 167.60309,43.938545 167.64944,43.164307 C167.69373,42.392975 167.71796,41.642586 167.71796,40.91446 C167.71796,40.280167 167.7291,39.41739 167.75125,38.326393 C167.77356,37.23593 167.79572,36.04368 167.81973,34.747795 C167.84204,33.454025 167.85492,32.12686 167.85492,30.762856 C167.85492,29.35405 167.85492,28.03775 167.85492,26.810783 C167.85492,26.810783 167.85492,13.523758 167.85492,13.523758 C167.85492,12.70472 167.84204,11.876663 167.81973,11.035362 C167.79572,10.196175 167.75125,9.399925 167.68448,8.650864 C167.61426,7.9004745 167.50113,7.2205887 167.34183,6.6064453 C167.18082,5.993088 166.96588,5.5493736 166.69363,5.277687 C166.01007,4.5511513 165.24704,4.062908 164.40607,3.8116302 C163.56339,3.5640602 162.52792,3.3459167 161.29797,3.1646118 C161.29797,3.1646118 161.29797,2.4844666 161.29797,2.4844666 C161.66293,2.4844666 162.59644,2.4844666 164.09863,2.4844666 C165.6453,2.4844666 167.39935,2.4733315 169.35526,2.4494781 C171.31305,2.4272118 173.27103,2.4142227 175.22882,2.4142227 C177.18472,2.4142227 178.77945,2.4142227 180.0094,2.4142227 C183.05829,2.4142227 185.76624,2.5067291 188.13345,2.687767 C190.50049,2.8690681 192.66394,3.482952 194.62003,4.5288887 C196.62418,5.5729637 198.23935,6.993164 199.46912,8.787636 C200.69717,10.581047 201.31207,12.839905 201.31207,15.568184 C201.31207,17.248146 201.00464,18.758469 200.38974,20.098885 C199.77655,21.438774 198.95602,22.618301 197.93173,23.642235 C196.90741,24.662453 195.71283,25.53875 194.3476,26.265549 C192.98254,26.991821 191.54901,27.605438 190.04492,28.104546 C190.04492,28.104546 190.04492,28.309708 190.04492,28.309708 C190.81909,28.717903 191.57117,29.309784 192.29916,30.082443 C193.02701,30.855095 193.73273,31.716545 194.41626,32.670242 C195.59799,34.39685 196.88339,36.25997 198.27264,38.25827 C199.66171,40.25631 200.90283,42.029305 201.99564,43.57276 C203.6774,45.934998 205.31677,47.66134 206.9115,48.75181 C208.50452,49.842537 210.36963,50.546806 212.50903,50.864616 C212.50903,50.864616 212.50903,51.54715 212.50903,51.54715 C212.50903,51.54715 198.51349,51.54715 198.51349,51.54715 ZM191.75278,9.09272 C190.61536,7.321846 188.95212,5.9154243 186.76825,4.8689613 C185.67545,4.3701134 184.52515,4.0059204 183.3194,3.7782326 C182.11365,3.551075 180.85037,3.4384232 179.5315,3.4384232 C178.57397,3.4384232 177.79962,3.4604225 177.20877,3.5049515 C176.61603,3.551075 176.16043,3.5971947 175.84183,3.6414604 C175.79736,3.915268 175.75119,4.151703 175.70673,4.356861 C175.66037,4.561756 175.62708,4.8244324 175.60477,5.140648 C175.58072,5.460579 175.55841,5.9027023 175.53625,6.469673 C175.51224,7.0390244 175.47894,7.8450775 175.43448,8.887566 C175.38623,10.479263 175.35294,12.273994 175.33063,14.272293 C175.30847,16.2706 175.2973,18.202103 175.2973,20.063896 C175.2973,21.92675 175.2973,23.562714 175.2973,24.969398 C175.2973,26.333405 175.2973,27.197243 175.2973,27.561172 C177.1626,27.561172 178.90356,27.47953 180.52063,27.320496 C182.13577,27.16172 183.69531,26.83252 185.19754,26.333405 C186.65338,25.878822 187.90549,25.265205 188.95212,24.492554 C190.00046,23.721748 190.85257,22.847313 191.51382,21.869766 C192.17316,20.89354 192.66394,19.838066 192.98254,18.701218 C193.29926,17.565956 193.46045,16.385101 193.46045,15.157867 C193.46045,12.887344 192.89001,10.865456 191.75278,9.09272 Z"/>
+                </svg>
+            </a>
+            <div class="header__nav">
+                
 
-                        <a href="/" class="hover-underline-animation">Главная</a>
-                        <a href="/catalog/" class="hover-underline-animation">Продукты</a>
-                        <a href="#" class="hover-underline-animation">О нас</a>
-                        <a href="/advices/" class="hover-underline-animation">Советы Гоар</a>
-                        <a href="#" class="hover-underline-animation">Доставка</a>
-                        <a href="#" class="hover-underline-animation">Контакты</a>
-                    </div>
+                
+                    <a href="#" class="header__nav-item">
+Главная
+                    </a>
+                
+                    <a href="#" class="header__nav-item">
+Продукты
+                    </a>
+                
+                    <a href="#" class="header__nav-item">
+О нас
+                    </a>
+                
+                    <a href="#" class="header__nav-item">
+Советы Гоар
+                    </a>
+                
+                    <a href="#" class="header__nav-item">
+Доставка
+                    </a>
+                
+                    <a href="#" class="header__nav-item">
+Контакты
+                    </a>
+                
+                
 
-                    <div class="topnav" id="topMenu">
-                        <a href="/" class="hover-underline-animation">Главная</a>
-                        <span>Продукты</span>
-                        <a href="#" class="hover-underline-animation">О нас</a>
-                        <a href="/advices/" class="hover-underline-animation">Советы Гоар</a>
-                        <a href="#" class="hover-underline-animation">Доставка</a>
-                        <a href="#" class="hover-underline-animation">Контакты</a>
-                        <a href="javascript:void(0);" class="icon" onclick="openNav()">&nbsp;</a>
-                    </div>
 
-                    <script>
-                        function openNav() {
-                            document.getElementById("sidenav").style.width = "100%";
-                        }
-
-                        function closeNav() {
-                            document.getElementById("sidenav").style.width = "0";
-                        }
-                    </script>
-
-                    <div class="icons">
-                        <a href="/auth">
-                            <img src="https://goar.elmark.pro/image/icon-personal.png.webp" class="icon-personal">
-                        </a>
-                        <a href="/cart">
-                            <img src="https://goar.elmark.pro/image/icon-cart.png.webp" class="icon-cart">
-                        </a>
-                    </div>
-                </div>
+            </div>
+            <div class="header__buttons">
+                <a href="#">
+<img src="images/header/user.png" alt=""/>
+                </a>
+                <a href="#">
+                    <img src="images/header/shopping.png" alt=""/>
+                </a>
             </div>
         </div>
     </div>
 </div>
-<div id="slider">
-    <div id="slide-catalog" class="slide">
-        <img src="https://goar.elmark.pro/image/slide_catalog_page.jpg" class="main-banner-pc">
-        <div class="slide-content">
-            <span class="slide-content-title revealator-fade revealator-delay5 revealator-duration20">Продукты</span>
-        </div>
-    </div>
-</div>
 
 
 
-<div id="catalog-page">
-    <div class="content catalog-page">
-        <div class="content-wrapper">
-            <div class="catalog__wrap">
-                <div class="catalog__banner img">
-                    <img src="images/catalog/1.jpg" alt=""/>
-                    <div class="catalog__text">
-                        губы
-                    </div>
-                </div>
-                <div class="catalog__list">
-                    
 
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/1.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для губ</span>
-                                <strong>cappuccino</strong>
-                            </div>
 
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
+<!-- content -->
+<div class="content-wrapper">
+    
 
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/2.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для глаз</span>
-                                <strong>FRESH BLUE</strong>
-                            </div>
 
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/3.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для бровей</span>
-                                <strong>TAUPE</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/4.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для губ</span>
-                                <strong>rolls royce</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/5.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для бровей</span>
-                                <strong>DARK BROWN</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/6.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для губ</span>
-                                <strong>NUDE ROSE</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                </div>
-
-            </div>
-            <div class="catalog__wrap">
-                <div class="catalog__banner img">
-                    <img src="images/catalog/2.jpg" alt=""/>
-                    <div class="catalog__text">
-                        глаза
-                    </div>
-                </div>
-                <div class="catalog__list">
-                    
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/1.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для губ</span>
-                                <strong>cappuccino</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/2.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для глаз</span>
-                                <strong>FRESH BLUE</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/3.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для бровей</span>
-                                <strong>TAUPE</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/4.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для губ</span>
-                                <strong>rolls royce</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/5.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для бровей</span>
-                                <strong>DARK BROWN</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/6.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для губ</span>
-                                <strong>NUDE ROSE</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                </div>
-
-            </div>
-            <div class="catalog__wrap">
-                <div class="catalog__banner img">
-                    <img src="images/catalog/3.jpg" alt=""/>
-                    <div class="catalog__text">
-                        брови
-                    </div>
-                </div>
-                <div class="catalog__list">
-                    
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/1.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для губ</span>
-                                <strong>cappuccino</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/2.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для глаз</span>
-                                <strong>FRESH BLUE</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/3.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для бровей</span>
-                                <strong>TAUPE</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/4.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для губ</span>
-                                <strong>rolls royce</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/5.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для бровей</span>
-                                <strong>DARK BROWN</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                        <div class="catalog__item">
-                            <div class="catalog__img img img--contain">
-                                <img src="images/catalog/6.png" alt=""/>
-                            </div>
-                            <div class="catalog__title">
-                                <span>Карандаш для губ</span>
-                                <strong>NUDE ROSE</strong>
-                            </div>
-
-                            <div class="catalog__price">
-                                <strong>1090₽ </strong>
-                                <span>1990 ₽</span>
-                            </div>
-                            <a href="#" class="btn">
-                                В КОРЗИНУ
-                            </a>
-                        </div>
-
-                    
-                </div>
-
+    
+    <div class="catalog-banner">
+        <div class="container">
+            <div class="catalog-banner__wrap">
+                <h1 class="h1">ПРОДУКТЫ</h1>
             </div>
         </div>
     </div>
+
+    
+    <div id="catalog-page">
+        <div class="content catalog-page">
+            <div class="content-wrapper">
+                <div class="catalog__wrap">
+                    <div class="catalog__banner img">
+                        <img src="images/catalog/1.jpg" alt=""/>
+                        <div class="catalog__text">
+                            губы
+                        </div>
+                    </div>
+                    <div class="catalog__list">
+                        
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/1.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для губ</span>
+                                    <strong>cappuccino</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/2.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для глаз</span>
+                                    <strong>FRESH BLUE</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/3.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для бровей</span>
+                                    <strong>TAUPE</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/4.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для губ</span>
+                                    <strong>rolls royce</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/5.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для бровей</span>
+                                    <strong>DARK BROWN</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/6.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для губ</span>
+                                    <strong>NUDE ROSE</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                    </div>
+
+                </div>
+                <div class="catalog__wrap">
+                    <div class="catalog__banner img">
+                        <img src="images/catalog/2.jpg" alt=""/>
+                        <div class="catalog__text">
+                            глаза
+                        </div>
+                    </div>
+                    <div class="catalog__list">
+                        
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/1.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для губ</span>
+                                    <strong>cappuccino</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/2.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для глаз</span>
+                                    <strong>FRESH BLUE</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/3.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для бровей</span>
+                                    <strong>TAUPE</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/4.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для губ</span>
+                                    <strong>rolls royce</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/5.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для бровей</span>
+                                    <strong>DARK BROWN</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/6.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для губ</span>
+                                    <strong>NUDE ROSE</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                    </div>
+
+                </div>
+                <div class="catalog__wrap">
+                    <div class="catalog__banner img">
+                        <img src="images/catalog/3.jpg" alt=""/>
+                        <div class="catalog__text">
+                            брови
+                        </div>
+                    </div>
+                    <div class="catalog__list">
+                        
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/1.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для губ</span>
+                                    <strong>cappuccino</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/2.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для глаз</span>
+                                    <strong>FRESH BLUE</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/3.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для бровей</span>
+                                    <strong>TAUPE</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/4.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для губ</span>
+                                    <strong>rolls royce</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/5.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для бровей</span>
+                                    <strong>DARK BROWN</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                            <div class="catalog__item">
+                                <div class="catalog__img img img--contain">
+                                    <img src="images/catalog/6.png" alt=""/>
+                                </div>
+                                <div class="catalog__title">
+                                    <span>Карандаш для губ</span>
+                                    <strong>NUDE ROSE</strong>
+                                </div>
+
+                                <div class="catalog__price">
+                                    <strong>1090₽ </strong>
+                                    <span>1990 ₽</span>
+                                </div>
+                                <a href="#" class="btn">
+                                    В КОРЗИНУ
+                                </a>
+                            </div>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
+<!-- content -->
+
 
 <div class="footer">
-    <div class="content">
-        <div class="content-wrapper">
-            <div class="footer-container">
-                <div class="row">
-                    <div class="col">
-                        <span class="footer-col-title">Продукция</span>
-                        <ul>
-                            <li><a href="#" class="hover-underline-animation">Консилер</a></li>
-                            <li><a href="#" class="hover-underline-animation">Тон</a></li>
-                            <li><a href="#" class="hover-underline-animation">Карандаши</a></li>
-                            <li><a href="#" class="hover-underline-animation">Салфетки</a></li>
-                            <li><a href="#" class="hover-underline-animation">Спонжи</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <span class="footer-col-title">Компания</span>
-                        <ul>
-                            <li><a href="#" class="hover-underline-animation">Оплата и доставка</a></li>
-                            <li><a href="/advices/" class="hover-underline-animation">Советы от Goar</a></li>
-                            <li><a href="#" class="hover-underline-animation">О бренде</a></li>
-                            <li><a href="#" class="hover-underline-animation">Контакты</a></li>
-                            <li><a href="#" class="hover-underline-animation">Политика конфеденциальности</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <span class="footer-col-title">Контакты</span>
-                        <ul>
-                            <li class="has-icaon"><img src="https://goar.elmark.pro/image/footer_phone.png.webp"/><a
-                                        href="teL:8(800)555-35-35" class="hover-underline-animation">8(800)555-35-35</a>
-                            </li>
-                            <li class="has-icaon"><img src="https://goar.elmark.pro/image/footer_email.png.webp"/><a
-                                        href="mailto:goar.pr@mail.ru"
-                                        class="hover-underline-animation">goar.pr@mail.ru</a></li>
-                            <li class="has-icaon"><img
-                                        src="https://goar.elmark.pro/image/footer_address.png.webp"/><span>109012, Москва,<br>ул. Никольская, д.10</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__column">
+                <h3 class="h3">Продукция</h3>
+                
+
+                
+                    <a href="#">Консилер</a>
+                
+                    <a href="#">Тон</a>
+                
+                    <a href="#">Карандаши</a>
+                
+                    <a href="#">Спонжи</a>
+                
+
             </div>
+            <div class="footer__column">
+                <h3 class="h3">Компания</h3>
+                
+
+                
+                    <a href="#">Оплата и доставка</a>
+                
+                    <a href="#">Советы от Goar</a>
+                
+                    <a href="#">О бренде</a>
+                
+                    <a href="#">Контакты</a>
+                
+                    <a href="#">Политика конфиденциальности</a>
+                
+            </div>
+            <div class="footer__column">
+                <h3 class="h3">Контакты</h3>
+
+                
+
+                
+                    <a href="#">8(800)555-35-35</a>
+                
+                    <a href="#">info@goar.ru</a>
+                
+                    <a href="#">Время работы: пн-пт с 10 до 19</a>
+                
+                    <a href="#">109012, г. Москва, ул. Никольская д.10</a>
+                
+            </div>
+
         </div>
+
     </div>
 </div>
-<style>
-    .btn_wa {
-        position: fixed;
-        right: 27px;
-        width: 50px;
-        z-index: 999;
-    }
 
-    .btn_wa {
-        bottom: 50px;
-    }
 
-    /*.btn_wa a {
-        border-radius: 2px;
-        background-color: #25D366;
-        border-color: #25D366;
-        padding: 20px 10px 7px 12px;
-    }*/
-    @media screen and (max-width: 767px) {
-        .btn_wa {
-            bottom: 50px;
-        }
-    }
-</style>
-<div class="btn_wa">
-    <a href="https://api.whatsapp.com/send?phone=37493007387" target="_blank">
-        <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-             viewBox="0 0 1000 1000" xml:space="preserve">
-            <g>
-                <g transform="matrix(1 0 0 -1 0 1920)">
-                    <path d="M112.1,930c-28.3,0-52.4,9.9-72.3,29.8c-19.9,19.9-29.8,44-29.8,72.3v775.8c0,28.3,9.9,52.4,29.8,72.3c19.9,19.9,44,29.8,72.3,29.8h775.8c28.3,0,52.4-9.9,72.3-29.8c19.9-19.9,29.8-44,29.8-72.3v-775.8c0-28.3-9.9-52.4-29.8-72.3c-19.9-19.9-44-29.8-72.3-29.8H112.1z M152.5,1068l194.8,51c50.9-27,105.4-40.4,163.3-40.4c27.2,0,53.9,3.1,80,9.2c26.1,6.1,50.7,15,73.7,26.5c23,11.6,44.6,25.3,64.9,41.2c20.3,15.9,38.4,34,54.3,54.3c15.9,20.3,29.7,41.9,41.2,64.9c11.6,23,20.4,47.6,26.5,73.9c6.1,26.3,9.2,53,9.2,80.2c0,46.5-8.8,91.2-26.3,133.9c-17.6,42.7-42.9,80.6-75.9,113.7c-33.1,33.1-70.9,58.4-113.5,75.9c-42.6,17.6-87.3,26.5-134.1,26.7c-31.8,0-62.9-4.2-93.1-12.7c-30.2-8.4-58.1-20.2-83.7-35.3c-25.6-15.1-49.1-33.4-70.6-54.9c-21.5-21.5-39.8-45.1-54.9-70.6c-15.1-25.6-26.9-53.5-35.3-83.7c-8.4-30.2-12.7-61.3-12.7-93.1c0-60.7,14.8-117.5,44.5-170.3L152.5,1068z M510.2,1160.3c-49,0-94.5,12.5-136.4,37.6l-14.7,8.6l-90.6-23.7l24.1,88.2l-9.8,15.1c-27.2,43.6-40.8,91.2-40.8,142.9c0,36.5,7.1,71.3,21.2,104.3c14.2,33.1,33.3,61.6,57.4,85.5c24.1,24,52.7,43.1,85.8,57.4c33.1,14.3,67.9,21.4,104.3,21.4c35.9,0,70.2-6.8,102.9-20.4s61.7-33.1,87-58.4c25.3-25.3,44.7-54.4,58.2-87.2c13.5-32.8,20.2-67,20.2-102.7c0-36.5-7.1-71.3-21.2-104.3c-14.2-33.1-33.2-61.7-57.2-85.8c-24-24.1-52.5-43.2-85.8-57.4C581.5,1167.4,546.7,1160.3,510.2,1160.3z M598.4,1254.2c6.8,0,14.2,0.7,22.1,2c10.9,1.6,23.7,7.1,38.4,16.3c14.7,9.3,24.2,19.9,28.6,31.8c4.4,12.5,6.5,24.4,6.5,35.5c0,6.5-1,11.4-2.9,14.7c-2.2,4.1-7.8,8.2-16.7,12.3l-4.5,2.5c-32.1,16.1-51.7,25.3-58.8,27.8c-5.2,2.2-9.7,3.3-13.5,3.3c-7.9,0-14.6-4.1-20-12.3c-3-4.1-7.5-9.5-13.5-16.3c-6-6.8-11.3-11.6-15.9-14.3l-6.1,2.4c-22.3,9.8-41.9,22.3-58.8,37.6c-7.4,6.3-14.2,13.3-20.4,21c-6.3,7.8-11.2,14.7-14.9,20.8s-6.2,11.4-7.6,15.7c1.6,1.9,4.6,5.4,9,10.6l4.1,4.9c3.3,3.5,6.7,9.1,10.2,16.7c1.9,3.8,2.9,7.8,2.9,11.8c0,4.6-1.2,9.3-3.7,13.9c-0.8,1.9-6.1,14.8-15.9,38.8l-9.4,23.3c-3.8,8.7-8.2,14.6-13.1,17.6c-4.9,3-10.5,4.5-16.7,4.5H391c-12.3,0-23.3-5.3-33.1-15.9c-21-22.3-31.4-48-31.4-77.2c0-29.9,12.8-62.1,38.4-96.4c7.4-10.6,15.3-21.1,23.9-31.4c8.6-10.3,19.1-21.8,31.6-34.5c12.5-12.7,26.8-24.6,42.9-35.9c16.1-11.3,32.5-20.6,49.4-28c15.5-6.5,32-12.5,49.4-18C573.8,1256.1,585.9,1254.2,598.4,1254.2z"/>
-                </g>
-            </g>
-        </svg>
-    </a>
+<div id="preloader">
+    <div class="preloader"></div>
 </div>
+
 </body>
-</html>
+
+
+

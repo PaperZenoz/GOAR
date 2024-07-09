@@ -1,16 +1,17 @@
 .catalog
   &__wrap
     display: grid
-    grid-template-columns: 575px auto
+    grid-template-columns: 29.948vw auto
     grid-gap: 35px
     padding: 90px 0
     border-bottom: 2px solid #dfdfdf
+
     &:last-child
       border-bottom: 0
       padding-bottom: 0
-    @media screen and (max-width: 1023px)
-      grid-template-columns: 1fr
 
+    @media screen and (max-width: 767px)
+      grid-template-columns: 1fr
 
 
   &__banner
@@ -76,17 +77,38 @@
     display: grid
     grid-template-columns: repeat(4, 1fr)
     grid-gap: 80px 30px
-    @media screen and (max-width: 1643px)
+    @media screen and (max-width: 1599px)
       grid-template-columns: repeat(2, 1fr)
-    @media screen and (max-width: 1023px)
-    	grid-template-columns: 1fr
-    
-    	
-    
-
+    @media screen and (max-width: 767px)
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
 
   &__img
     aspect-ratio: 65 / 300
     width: 65px
     margin-bottom: 40px
-      
+
+
+
+.catalog-banner
+
+  background-image: url("../../images/catalog-banner/1.jpg")
+  background-size: cover
+  @media screen and (max-width: 767px)
+    background-image: url("../../images/catalog-banner/2.jpg")
+
+
+
+
+  &__wrap
+    height: 19vw
+    @extend %fc
+    @media screen and (max-width: 767px)
+      height: 56vw
+
+
+
+
+    .h1
+      font-size: clamp(1.875rem, calc(1.301rem + 2.87vw), 4.25rem)
