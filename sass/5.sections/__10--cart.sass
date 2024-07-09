@@ -39,12 +39,10 @@
     border: 1.2px solid #ececec
     position: relative
     margin-bottom: 5px
-    @media screen and (max-width: 1365px)
-      grid-template-columns: 1fr 1fr
 
-    @media screen and (max-width: 1023px)
+    @media screen and (max-width: 1365px)
       grid-template-columns: 1fr
-      padding: 20px
+      padding: 15px
 
 
   &__img
@@ -55,6 +53,7 @@
     @media screen and (max-width: 1023px)
       width: 75px
       height: 75px
+      margin-right: 10px
 
 
   &__color
@@ -70,6 +69,7 @@
     align-items: center
     font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
     position: relative
+    padding: 0 15px
 
     &:last-child
       border-right: 1px solid transparent
@@ -80,9 +80,17 @@
       &:nth-child(3)
         border-right: 1px solid transparent
 
-    @media screen and (max-width: 1023px)
+    @media screen and (max-width: 1365px)
       border-bottom: 1px solid #ececec
       border-right: 1px solid transparent
+      
+      
+    &:first-child
+      @media screen and (max-width: 1023px)
+      	padding-top: 10px
+      
+      	
+      
 
 
   &__col-title
@@ -94,6 +102,7 @@
     display: none
     @media screen and (max-width: 1365px)
       display: block
+      font-size: 11px
 
 
   &__title
@@ -103,6 +112,7 @@
       margin-top: 10px
 
     span
+      line-height: 1
       font-size: clamp(0.75rem, calc(0.69rem + 0.3vw), 1rem)
 
 
