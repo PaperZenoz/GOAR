@@ -12,3 +12,10 @@
       display: block
       margin-bottom: 25px
       @extend %lc
+      @extend %transition
+      border-bottom: 1px solid $transparent
+      &:hover
+          border-bottom: 1px solid $black
+
+    > div
+      margin-bottom: 25px
