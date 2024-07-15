@@ -98,7 +98,7 @@ $(document).ready(function () {
         })
     }
 
-    counter()
+    // counter()
     review()
     burger()
     // more_text()
