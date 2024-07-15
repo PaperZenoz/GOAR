@@ -37,11 +37,11 @@ a {
     box-sizing: border-box;
     overflow: visible;
 }
-.content-wrapper {
-    display: block;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+/*.content-wrapper {*/
+/*    display: block;*/
+/*    margin-left: 20px;*/
+/*    margin-right: 20px;*/
+/*}*/
 .container {
     position: relative;
     padding-top: 24px;
