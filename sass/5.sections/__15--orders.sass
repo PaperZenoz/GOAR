@@ -44,23 +44,39 @@
     @extend %fy
     gap: 30px
     @media screen and (max-width: 1023px)
-    	gap: 15px
-    
-    	
-    
+      gap: 15px
+
 
   &__icon
     width: 30px
     height: 30px
 
-
-  &__body
+  &__inner-head
     display: grid
-    grid-template-columns: 45fr 31fr 58fr
+    grid-template-columns: 2fr 1fr 1fr 2fr
     padding: 30px
+    border-bottom: 1px solid #ececec
+    @media screen and (max-width: 1023px)
+      display: none
+
+
+  &__inner-item
+    display: grid
+    grid-template-columns: 2fr 1fr 1fr 2fr
+    padding: 30px
+    border-bottom: 1.2px solid #ececec
     @media screen and (max-width: 1023px)
       grid-template-columns: 1fr
       padding: 20px
+
+
+  &__inner-footer
+    padding: 30px
+    display: grid
+    grid-template-columns: 2fr 1fr 1fr 2fr
+    @media screen and (max-width: 1023px)
+      grid-template-columns: 1fr
+      gap: 10px
 
 
   &__img
@@ -91,11 +107,16 @@
   &__product
     display: flex
   //gap: 25px
-
+  &__inner-head-col
+    @extend %fc
 
   &__col
     border-right: 1.2px solid #ececec
     @extend %fc
+
+    &:first-child
+      justify-content: flex-start
+
     @media screen and (max-width: 1023px)
       border-right: 1px solid $transparent
       border-bottom: 1px solid #ececec
@@ -107,6 +128,8 @@
 
     &:nth-child(2)
       @extend %fc
+      @media screen and (max-width: 1023px)
+        justify-content: flex-start
 
 
   &__price
@@ -124,6 +147,23 @@
   &__info.done
     span
       color: #25ae60
+
+
+  &__result
+    @extend %fc
+    flex-direction: column
+    font-size: clamp(1rem, calc(0.94rem + 0.3vw), 1.25rem)
+
+    .btn
+      @extend %up
+      margin-top: 15px
+      height: 58px
+
+
+  &__client
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 
 
 
