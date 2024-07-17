@@ -21,11 +21,13 @@
       left: 0
       z-index: 1
       display: none
-      
+
   &__nav-item
-    border-bottom: 1px solid $transparent 
+    border-bottom: 1px solid $transparent
+
     &:hover
       border-bottom: 1px solid $black
+
     @media screen and (max-width: 1023px)
       padding: 5px
       display: block
@@ -46,3 +48,21 @@
 
     img
       height: 20px
+
+
+  &__basket
+    position: relative
+
+
+  &__basket-counter
+    width: 20px
+    height: 20px 
+    @include r(50%)
+    color: $white
+    background-color: $black
+    @extend %fc
+    font-size: 10px
+    position: absolute
+    top: 0
+    right: 0
+    transform: translate(50%, -50%)
