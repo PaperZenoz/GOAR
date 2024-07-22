@@ -3,6 +3,7 @@
 {% block content %}
 
     {% set  bread = [
+        'Главная',
         'Продукты',
         'PINK BLUSH'] %}
 
@@ -77,7 +78,7 @@
                             {% for item in list %}
                                 <label class="{{ _ }}__color">
                                     <input type="radio" name="color" checked>
-                                    <span style="background-color: {{ item }}"></span>
+                                    <span style="background-color: {{ item }}" title="Розовый"></span>
                                 </label>
                             {% endfor %}
                         </div>

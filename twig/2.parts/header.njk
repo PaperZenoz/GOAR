@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png"> 
     <title>{{ page.title }}</title>
     {% include "./head.njk" %}
 </head>
@@ -39,8 +40,9 @@
                     'Контакты'
                 ] %}
 
+
                 {% for item in list %}
-                    <a href="#" class="{{ _ }}__nav-item">
+                    <a href="#" class="{{ _ }}__nav-item   {% if loop.index == 1 %} active {% endif %}">
                         {{ item }}
                     </a>
                 {% endfor %}

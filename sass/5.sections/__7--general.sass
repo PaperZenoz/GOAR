@@ -120,6 +120,8 @@
       margin-top: 15px
       position: relative
       padding-bottom: 25px
+      white-space: nowrap
+      @extend %transition
 
       &:before
         content: ''
@@ -131,6 +133,11 @@
         bottom: 0
         left: 50%
         transform: translateX(-50%)
+
+
+      &:hover
+        color: #cfabf1
+        
 
   &__price
     font-size: clamp(0.938rem, calc(0.862rem + 0.38vw), 1.25rem)
@@ -202,6 +209,7 @@
     display: grid
     grid-template-columns: repeat(3, 1fr)
     grid-gap: 25px
+    scale: 0.8
     @media screen and (max-width: 1023px)
       grid-gap: 10px
 
