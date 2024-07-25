@@ -9,7 +9,6 @@
     background-position: bottom
 
 
-
   &__wrap
     text-align: center
     max-width: 705px
@@ -34,7 +33,7 @@
   overflow: hidden
 
   &__block
-    @include py(100px, 100px, 80px, 60px, 30px)
+    @include py(100px, 60px, 60px, 60px, 30px)
     @include px(30px, 30px, 20px, 20px, 10px)
 
 
@@ -44,20 +43,6 @@
       gap: 30px
     @media screen and (max-width: 1023px)
       display: block
-
-    &:nth-child(1)
-      @media screen and (max-width: 1919px)
-        position: relative
-        bottom: -50px
-      @media screen and (max-width: 1599px)
-      	bottom: 0
-
-
-
-
-
-
-
 
 
     &:nth-child(3)
@@ -118,9 +103,6 @@
           width: 16vw
 
 
-
-
-
       &:after
         content: ''
         height: 100%
@@ -137,7 +119,7 @@
 
   &__content
     max-width: 650px
-    @media screen and (max-width: 1919px)
+    @media screen and (max-width: 1599px)
       max-width: 100%
 
   &__mobile-right
@@ -157,9 +139,15 @@
         max-width: 420px
 
     @media screen and (max-width: 1919px)
-      margin-bottom: -75px
+      margin-bottom: -165px
       width: 75%
       position: relative
+    @media screen and (max-width: 1365px)
+      width: 100%
+    @media screen and (max-width: 1023px)
+      margin-bottom: 0
+
+
     @media screen and (max-width: 639px)
       width: 100%
       margin-left: auto
@@ -167,33 +155,21 @@
 
 
   &__block:nth-child(1)
+    .about-us-core__img
+      top: 100px
+      @media screen and (max-width: 1919px)
+        top: 15px
+      @media screen and (max-width: 1599px)
+        top: -55px
+      @media screen and (max-width: 1365px)
+        top: 0
+
+
     .about-us-core__content
       max-width: 620px
       padding-top: 50px
-      @media screen and (max-width: 1919px)
-        padding-top: 100px
       @media screen and (max-width: 1599px)
         padding-top: 0
-
-
-
-
-
-
-
-
-    .about-us-core__img
-      //@media screen and (max-width: 1919px)
-      //  scale: 1.2
-      //@media screen and (max-width: 1599px)
-      //  scale: 1
-
-
-
-
-
-
-
 
 
   &__block:nth-child(3)
@@ -204,9 +180,17 @@
       top: 60px
       @media screen and (max-width: 1919px)
         top: 0
-        width: 100%
+        width: 135%
         left: 0
         margin-bottom: 55px
+      @media screen and (max-width: 1023px)
+        width: 35%
+        margin-left: auto
+        margin-right: auto
+      @media screen and (max-width: 639px)
+      	width: 75%
+
+
 
 
 .about-us-footer
