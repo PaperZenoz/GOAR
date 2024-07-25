@@ -143,15 +143,15 @@
     justify-content: space-between
     gap: 30px
     @media screen and (max-width: 1365px)
-      flex-direction: column
       gap: 20px
+      flex-wrap: wrap
 
     .input
       border: 1.2px solid #ececec
       max-width: 380px
       height: 58px
       @media screen and (max-width: 1365px)
-        max-width: 100%
+        max-width: calc(100% - 55px)
         height: 45px
 
     .btn
